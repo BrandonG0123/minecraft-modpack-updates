@@ -28,6 +28,6 @@ Write-Host "Will stop shipping:  $($hit.Slug)   ->  $($hit.File)" -ForegroundCol
 Write-Host "The jar STAYS in your own instance. Friends lose it on their next launch."
 if (-not $Force -and (Read-Host "Type YES to confirm") -ne 'YES') { Write-Host "Cancelled."; exit 0 }
 
-Add-Content -LiteralPath $excludeFile -Value $hit.File
+[IO.File]::AppendAllText($excludeFile, $hit.File + "`n")
 Remove-Item -LiteralPath "$Pack\mods\$($hit.Slug).pw.toml" -Force
 Write-Host "Excluded. Run publish.bat to push the change." -ForegroundColor Green

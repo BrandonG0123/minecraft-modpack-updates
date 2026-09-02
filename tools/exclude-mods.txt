@@ -1,4 +1,4 @@
-﻿# Mods to keep in YOUR instance but NOT ship to friends.
+# Mods to keep in YOUR instance but NOT ship to friends.
 # One entry per line: a filename fragment or the metadata slug. Case-insensitive.
 # Lines starting with # are ignored.
 #
