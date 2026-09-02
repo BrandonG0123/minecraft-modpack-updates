@@ -1,0 +1,13 @@
+name = "Healing Campfire"
+filename = "healingcampfire-1.21.11-6.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/kOuPUitF/versions/FluBpCHQ/healingcampfire-1.21.11-6.2.jar"
+hash-format = "sha512"
+hash = "2fbfd75ebebea5fa3c47747df751d91d300fbc08066f8a0730b18c27e8d5f4e36aba5b79cbfe91e97b3a91a2f5bdb040a918277576d52d3c4ad44528396687c3"
+
+[update]
+[update.modrinth]
+mod-id = "kOuPUitF"
+version = "FluBpCHQ"

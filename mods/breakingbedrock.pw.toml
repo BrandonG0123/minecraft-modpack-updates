@@ -1,0 +1,13 @@
+name = "Breaking Bedrock"
+filename = "breakingbedrock-fabric-1.2.1+1.21.11.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/s0tNTkDN/versions/FuEfly4K/breakingbedrock-fabric-1.2.1%2B1.21.11.jar"
+hash-format = "sha512"
+hash = "7cc7ecfc1b3a5e38e3e6bca1143a4fe231348c648889fb31f69d1d9d6024a7cb505aab8bbda9fc9b5eed62b2350db0c869c45dcf4bc65af37c840495e2a80bde"
+
+[update]
+[update.modrinth]
+mod-id = "s0tNTkDN"
+version = "FuEfly4K"

@@ -7,7 +7,6 @@ Write-Host "== Re-importing mods from instance ==" -ForegroundColor Cyan
 # stale metadata is removed first so deleted mods drop out of the pack
 Get-ChildItem -LiteralPath (Join-Path $Pack 'mods') -Filter *.pw.toml -File | Remove-Item -Force
 & "$PSScriptRoot\import-from-instance.ps1" -Instance $Instance -Pack $Pack
-if ($LASTEXITCODE -ne 0) { throw "import failed" }
 # every mod ships to every player: singleplayer runs an integrated server
 Get-ChildItem -LiteralPath (Join-Path $Pack 'mods') -Filter *.pw.toml -File | ForEach-Object {
     $t = [IO.File]::ReadAllText($_.FullName) -replace '(?m)^side = "(client|server)"$','side = "both"'

@@ -169,6 +169,11 @@ hash = "74aea7bf3c2f83387c542596261abde378aed355d23a770050bda940b43ec9e6"
 metafile = true
 
 [[files]]
+file = "mods/breakingbedrock.pw.toml"
+hash = "74acb20950b9b49abb38c37007cda7de05bf6ea36aa3e3b9c5a7c1ee44709b2b"
+metafile = true
+
+[[files]]
 file = "mods/bridging-mod.pw.toml"
 hash = "af0b8d0e620eab075e2415584e42b5ef668c19a3b80932192aeb4aed02119620"
 metafile = true
@@ -201,6 +206,16 @@ metafile = true
 [[files]]
 file = "mods/clumps.pw.toml"
 hash = "f8fc452a9f519e3597ddee5f914db96c45804b8f5e628df1c1d0f6c06bdc78b4"
+metafile = true
+
+[[files]]
+file = "mods/collective.pw.toml"
+hash = "30f890e038e22fa1101aad98204d29d4acbccc77fad7e41869c71ab4bb369166"
+metafile = true
+
+[[files]]
+file = "mods/config-api.pw.toml"
+hash = "939e2ee5f51ad63ad703e974db11102e9ec3bfc2e5787e18160fea9995b8f8fd"
 metafile = true
 
 [[files]]
@@ -334,6 +349,11 @@ hash = "66b0880d66e758a3c7c9b10314d268ce4034422e23b71e24bf5cc63eb6ecd0f3"
 metafile = true
 
 [[files]]
+file = "mods/healing-campfire.pw.toml"
+hash = "f9f6fa150e819b5e28b3ce307872ae44f4995dc7b76418feea1143269a5da824"
+metafile = true
+
+[[files]]
 file = "mods/image2map.pw.toml"
 hash = "3999584c4e42cc53031469b95f76811c8720b07ece292314e0cc391daa26e428"
 metafile = true
@@ -391,6 +411,11 @@ metafile = true
 [[files]]
 file = "mods/malilib.pw.toml"
 hash = "18b7edb33c49c0a0413baefbf55082bea5f4fdd31a6777788dbdd52b8b197dbc"
+metafile = true
+
+[[files]]
+file = "mods/mcpitanlibarch.pw.toml"
+hash = "936b8573296193d3426a578ba82da706fd208fc5906543f02c61ef073ba10710"
 metafile = true
 
 [[files]]
@@ -466,6 +491,11 @@ metafile = true
 [[files]]
 file = "mods/polymer.pw.toml"
 hash = "eb6ad47f2b7c7ff26d91547f01cc5262ccb8bdaa2ac36c6c7330872ba683e199"
+metafile = true
+
+[[files]]
+file = "mods/portalblaster.pw.toml"
+hash = "efaf6952d23eb69e9ae1082664fcfd5946985828ab05709b14a3c4778a64751d"
 metafile = true
 
 [[files]]
@@ -594,13 +624,33 @@ hash = "b281804e87cc6cab7b8cc326296d422bd629f6260ad21f178f5032fc56e40d02"
 metafile = true
 
 [[files]]
+file = "mods/xaeros-playerposition.pw.toml"
+hash = "5f5037679a2db88dd252fccf3e53ea83c166e2065536af9fcfa55d5ca46b18c1"
+metafile = true
+
+[[files]]
 file = "mods/xaeros-world-map.pw.toml"
 hash = "6e2cb94c1dd5084525f15866dfddf9dc46946681db90c42b931c2446c4df2b8a"
 metafile = true
 
 [[files]]
+file = "mods/xaeroshare.pw.toml"
+hash = "7ddf0bf755141a3d72bdb426ee5d23068494279e287c9afe15bf253af04a3438"
+metafile = true
+
+[[files]]
 file = "mods/yacl.pw.toml"
 hash = "1dd70b64b0456f3d4f9632c86b696042e6c66560a46bda488a633e0f7df755b3"
+metafile = true
+
+[[files]]
+file = "mods/yamato-gun.pw.toml"
+hash = "6dad277330aad08bc4001a100ee4ccfbda98e7a2a5c9b3898a48b1a23d70c820"
+metafile = true
+
+[[files]]
+file = "mods/yori3os-grappling-hooks.pw.toml"
+hash = "ce76916b18334db4a0f8f50c3d4f10e49a4d2613cf1c168e736d65e8992506dd"
 metafile = true
 
 [[files]]

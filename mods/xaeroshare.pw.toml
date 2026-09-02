@@ -1,0 +1,13 @@
+name = "XaeroShare"
+filename = "xaeroshare-1.2.0+1.21.11.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/tFFdBvRj/versions/v6jfUjs6/xaeroshare-1.2.0%2B1.21.11.jar"
+hash-format = "sha512"
+hash = "cc165bcbd9b66c4e4267a7b64129fa3ac0942b616e81b907caf1eba25966fb9cb90bb6de9eee29114c3f68a7362395b44c41a8db336c62181de6bb7992a6f049"
+
+[update]
+[update.modrinth]
+mod-id = "tFFdBvRj"
+version = "v6jfUjs6"

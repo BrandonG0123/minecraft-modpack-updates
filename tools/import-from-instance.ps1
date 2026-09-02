@@ -16,7 +16,11 @@ $modsDir = Join-Path $Instance 'minecraft\mods'
 $packMods = Join-Path $Pack 'mods'
 if (-not (Test-Path $packMods)) { New-Item -ItemType Directory -Path $packMods | Out-Null }
 
-$jars = Get-ChildItem -Path $modsDir -Filter *.jar -File | Sort-Object Name
+# .disabled jars are included too: Prism only renames the file, the contents are a normal jar.
+# They ship ENABLED. To drop one later run remove-mod.bat (or delete its mods\<name>.pw.toml),
+# then publish-pack-only.bat.
+$jars = Get-ChildItem -LiteralPath $modsDir -File |
+        Where-Object { $_.Name -match '\.jar(\.disabled)?$' } | Sort-Object Name
 Write-Host "Active jars found: $($jars.Count)" -ForegroundColor Cyan
 
 # --- hash every jar -------------------------------------------------------
