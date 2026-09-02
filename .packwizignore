@@ -7,3 +7,6 @@ tools/
 .gitignore
 .packwizignore
 .nojekyll
+
+# the friend-facing instance zip is a download, not pack content
+*.zip
