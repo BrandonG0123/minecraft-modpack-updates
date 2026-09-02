@@ -1,9 +1,15 @@
 @echo off
-REM Add a mod straight to the pack by Modrinth slug, ID, URL or search term.
-set /p SLUG="Modrinth slug / URL / search term: "
-if "%SLUG%"=="" exit /b 1
-"%~dp0bin\packwiz.exe" --pack-file "%~dp0..\pack.toml" modrinth add "%SLUG%"
-"%~dp0bin\packwiz.exe" --pack-file "%~dp0..\pack.toml" refresh
 echo.
-echo Added to the pack. Run publish-pack-only.bat to push it.
+echo  TO ADD A MOD
+echo  ------------
+echo  Add it to your Prism instance the normal way:
+echo.
+echo    Prism -^> "Mods(BG and Friends)" -^> Edit -^> Mods -^> Download mods
+echo    (or just drop the .jar into the mods folder)
+echo.
+echo  Then run publish.bat. That is the whole process.
+echo.
+echo  Your instance is the source of truth - adding straight to the pack
+echo  would be undone the next time you publish.
+echo.
 pause

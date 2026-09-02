@@ -21,6 +21,18 @@ if (-not (Test-Path $packMods)) { New-Item -ItemType Directory -Path $packMods |
 # then publish-pack-only.bat.
 $jars = Get-ChildItem -LiteralPath $modsDir -File |
         Where-Object { $_.Name -match '\.jar(\.disabled)?$' } | Sort-Object Name
+
+# honour the "keep in my instance but do not ship" list
+$excludeFile = Join-Path $PSScriptRoot 'exclude-mods.txt'
+$excludes = @()
+if (Test-Path $excludeFile) {
+    $excludes = @(Get-Content $excludeFile | Where-Object { $_.Trim() -and $_ -notmatch '^\s*#' } | ForEach-Object { $_.Trim() })
+}
+if ($excludes.Count) {
+    $before = $jars.Count
+    $jars = @($jars | Where-Object { $n = $_.Name; -not ($excludes | Where-Object { $n -like "*$_*" }) })
+    Write-Host "Excluded $($before - $jars.Count) mod(s) via exclude-mods.txt" -ForegroundColor Yellow
+}
 Write-Host "Active jars found: $($jars.Count)" -ForegroundColor Cyan
 
 # --- hash every jar -------------------------------------------------------

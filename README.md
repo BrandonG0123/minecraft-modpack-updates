@@ -72,18 +72,22 @@ Then run **one** thing:
 It re-reads your instance, rebuilds the metadata, and pushes. Friends get it on
 their next launch.
 
-### Other tools
+### The tools
 
 | Script | What it does |
 |---|---|
-| `publish.bat` | **The main one.** Sync from your instance → commit → push. |
-| `check-changes.bat` | Read-only. Shows what differs between your instance and the published pack. |
-| `update-all.bat` | Ask Modrinth for newer versions of every mod (updates the pack, not your instance). |
-| `add-mod.bat` | Add a mod to the pack directly by Modrinth slug/URL. |
-| `remove-mod.bat` | Remove a mod from the pack directly. |
-| `publish-pack-only.bat` | Push the pack without re-reading your instance. Use after the three above. |
+| `publish.bat` | **The main one.** Mirrors your instance into the pack, then pushes. |
+| `check-changes.bat` | Read-only. What differs between your instance and the published pack. |
+| `check-updates.bat` | Read-only. Which shipped mods have a newer version on Modrinth. |
+| `remove-mod.bat` | Stop shipping a mod. The jar stays in your instance. |
+| `add-mod.bat` | Reminder of the add flow (add it in Prism, then publish). |
 | `update-packwiz.bat` | Re-download the current packwiz build. |
 | `gh-login.bat` | One-time GitHub sign-in. |
+
+**Your Prism instance is the source of truth.** `publish.bat` copies *from* it, so
+editing the pack folder by hand gets overwritten on the next publish. The one
+exception is `exclude-mods.txt`, which is how you keep a mod locally without
+shipping it.
 
 ### Changing the managed config list
 
