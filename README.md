@@ -1,6 +1,6 @@
 # Tylers Mods — auto-updating modpack
 
-Minecraft **1.21.11** · Fabric **0.19.3** · 100 mods
+Minecraft **1.21.11** · Fabric **0.19.3** · 110 mods
 
 This repo *is* the modpack. It holds packwiz metadata — small `.toml` files that
 point at Modrinth downloads — not the mod jars themselves. Players' launchers
@@ -17,7 +17,7 @@ Pack URL: `https://brandong0123.github.io/minecraft-modpack-updates/pack.toml`
 3. In Prism: **Add Instance → Import from zip →** pick that file → **OK**.
 4. Click **Launch**.
 
-The first launch downloads ~100 mods, so it takes a few minutes and shows a
+The first launch downloads 110 mods, so it takes a few minutes and shows a
 progress window. Every launch after that checks for changes in seconds.
 
 ## For players (updating)
@@ -36,7 +36,11 @@ overwritten, or deleted:
 - `logs/`, `crash-reports/`
 - `options.txt` — video settings, FOV, **keybinds**
 - `optionsof.txt`, `optionsshaders.txt`
-- Xaero's minimap waypoints, Litematica schematics, JEI/inventory layouts
+- `xaero/` and `XaeroWaypoints*/` — your minimap/world-map waypoints, per-server
+  map data and server list. These live in their OWN top-level folders, not just
+  `config/`, and none of it is ever read or shipped.
+- `config/xaero/`, `xaerohud.txt` — minimap appearance and keybinds
+- Litematica schematics, JEI/inventory layouts, MaLiLib keybinds
 - Any mod you add yourself that isn't part of the pack
 
 ### What is centrally managed
@@ -92,3 +96,21 @@ Then run `publish.bat`.
 
 Edit `[versions]` in `pack.toml`, then `publish.bat`. Friends' Prism instances
 update their Minecraft and Fabric Loader versions automatically on next launch.
+
+### About the 10 formerly-disabled mods
+
+Ten mods were switched off (`.disabled`) in Tyler's instance and are now shipped
+**enabled** to everyone: Config API, Yamato Gun, Breaking Bedrock, Collective,
+Healing Campfire, MCPitanLib, PortalGunMod, Xaero's PlayerPosition, XaeroShare,
+Yori3o's Grappling Hooks.
+
+To drop any of them later: `modpack-tools\remove-mod.bat`, pick the name, then
+`publish-pack-only.bat`. One mod is one small file — removal is cheap and safe.
+
+### Publish safety net
+
+`publish.bat` runs `guard-personal-data.ps1` before every push. It scans the pack
+index and **refuses to publish** if anything player-personal has crept in —
+waypoints, saves, screenshots, shaderpacks, resourcepacks, `options.txt`, server
+lists, keybind configs. A blocked publish pushes nothing and tells you which file
+tripped it.

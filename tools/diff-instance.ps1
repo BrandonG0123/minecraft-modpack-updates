@@ -9,7 +9,10 @@ $instMods = Join-Path $Instance 'minecraft\mods'
 $packMods = Join-Path $Pack 'mods'
 
 # --- mods -----------------------------------------------------------------
-$instJars = @(Get-ChildItem -LiteralPath $instMods -Filter *.jar -File | ForEach-Object { $_.Name })
+# .disabled jars count too - they are in the pack and ship enabled
+$instJars = @(Get-ChildItem -LiteralPath $instMods -File |
+              Where-Object { $_.Name -match '\.jar(\.disabled)?$' } |
+              ForEach-Object { $_.Name -replace '\.disabled$','' })
 $packJars = @()
 $packMap  = @{}
 foreach ($f in Get-ChildItem -LiteralPath $packMods -Filter *.pw.toml -File) {
