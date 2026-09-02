@@ -1,0 +1,3 @@
+# packwiz hashes every file byte-for-byte. Any EOL translation between the
+# working copy and what GitHub Pages serves would break the index. Never convert.
+* -text

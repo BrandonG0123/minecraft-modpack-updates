@@ -1,0 +1,9 @@
+# Files here are never part of the distributed pack.
+_backups/
+tools/
+.git/
+.github/
+*.md
+.gitignore
+.packwizignore
+.nojekyll

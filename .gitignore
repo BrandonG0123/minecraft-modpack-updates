@@ -1,0 +1,6 @@
+# Local backups of Prism files - never publish
+_backups/
+# packwiz binary (12MB, re-fetched by tools/update-packwiz.bat)
+tools/bin/
+# local scratch
+*.log
