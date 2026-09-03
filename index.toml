@@ -90,7 +90,7 @@ hash = "cff6a9a0d415b19b9852844c0ad5bb2b1cfdb9fce12e729e7228a6521fc95927"
 
 [[files]]
 file = "config/terralith.json"
-hash = "fde7c697e3a9de9ff6834150d10dcfefd03161daf01c97b172b0afebd13944bb"
+hash = "af469436b99b83c0698e2263320bcc5395cc06c8e0fa3f0d0e2e6216d7e08b6d"
 
 [[files]]
 file = "config/trade_cycling/trade_cycling.properties"
