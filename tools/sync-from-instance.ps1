@@ -15,6 +15,8 @@ Get-ChildItem -LiteralPath (Join-Path $Pack 'mods') -Filter *.pw.toml -File | Fo
 Write-Host "== Refreshing managed configs ==" -ForegroundColor Cyan
 $n = 0
 foreach ($rel in (Get-Content "$PSScriptRoot\managed-configs.txt" | Where-Object { $_ -and $_ -notmatch '^\s*#' })) {
+    # '!' marks a pack-owned file: shipped, but never re-copied from the instance
+    if ($rel.StartsWith('!')) { Write-Host ("  (pack-owned, kept as-is) " + $rel.Substring(1)) -ForegroundColor DarkCyan; continue }
     $src = Join-Path $Instance "minecraft\$rel"
     $dst = Join-Path $Pack $rel
     if (Test-Path -LiteralPath $src) {

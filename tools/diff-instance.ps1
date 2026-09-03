@@ -44,6 +44,8 @@ Write-Host "======== MANAGED CONFIG DIFF ========" -ForegroundColor Cyan
 $listFile = Join-Path $PSScriptRoot 'managed-configs.txt'
 $drift = 0
 foreach ($rel in (Get-Content $listFile | Where-Object { $_ -and $_ -notmatch '^\s*#' })) {
+    # '!' marks a pack-owned file - it is not expected to match the instance
+    if ($rel.StartsWith("!")) { continue }
     $a = Join-Path $Instance "minecraft\$rel"
     $b = Join-Path $Pack $rel
     if (-not (Test-Path -LiteralPath $a)) { Write-Host "  ! missing in instance: $rel" -ForegroundColor Red; $drift++; continue }

@@ -10,19 +10,27 @@ $blocked = @(
     '^saves/', '^screenshots/', '^logs/', '^crash-reports/', '^backups/',
     '^shaderpacks/', '^resourcepacks/', '^schematics/', '^essential/',
     'options\.txt', 'optionsof\.txt', 'optionsshaders\.txt',
-    'servers\.dat', 'usercache\.json', 'usernamecache\.json',
+    'usercache\.json', 'usernamecache\.json',
     'litematica\.json', 'malilib\.json', 'fzzy_config/keybinds',
     '\.mixin\.out', '^\.cache/', '^\.bobby/', '^\.voxy/', '^data/',
     'chesttracker', 'whereisit', 'notes\.json', 'command_history',
     '\.minecraft', 'accounts\.json', 'TrashSlotSaveState'
 )
 
+
+# Deliberately shipped despite matching a blocked pattern above. Each entry here
+# is a conscious decision to centrally manage that file - add to it only on purpose.
+$allowed = @(
+    "config/chesttracker.json5"   # GUI layout: keeps its buttons out of JEI's column
+    "servers.dat"                 # seeds the server list on a fresh install
+)
 $index = Join-Path $Pack 'index.toml'
 $entries = Select-String -LiteralPath $index -Pattern '^file = "(.+)"$' |
            ForEach-Object { $_.Matches[0].Groups[1].Value }
 
 $hits = @()
 foreach ($e in $entries) {
+    if ($allowed -contains $e) { continue }
     foreach ($b in $blocked) {
         if ($e -match $b) { $hits += "$e   (matched: $b)"; break }
     }

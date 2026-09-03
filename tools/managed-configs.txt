@@ -25,3 +25,8 @@ config/trade_cycling/trade_cycling.properties
 config/Veinminer/blocks.json
 config/Veinminer/groups.json
 config/Veinminer/settings.json
+# --- GUI layout: keeps Chest Tracker's buttons out of JEI's column ---
+config/chesttracker.json5
+config/jei/jei-client.ini
+# --- seeds the server list on a fresh install (edits afterwards are kept) ---
+!servers.dat

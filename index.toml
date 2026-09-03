@@ -38,7 +38,11 @@ hash = "0b05a8814f09fead55b1901b7efab7d3ab87227ea3fc6b5e65a6197261832710"
 
 [[files]]
 file = "config/biomeswevegone/world_generation.json"
-hash = "4e644f8324221022aed71d39b3d56a6cd189d5bd3f67c4aa72b889fb208421da"
+hash = "6fb6ff3e2cb4d1c47431b2e9fb48090fd985e0b43777949ec0c346cda85e532d"
+
+[[files]]
+file = "config/chesttracker.json5"
+hash = "545838cec401e5d7b4dacb4084f257b6d3c7d0a21a5d8ad9fd11b1b4d3b865ea"
 
 [[files]]
 file = "config/compatdatapacks76/compatdatapacks76.json"
@@ -71,6 +75,10 @@ hash = "810c157db26c7bab75ca4e1846f88b9ef3d3640aae8a1cbc33438813c48ea4c7"
 [[files]]
 file = "config/image2map.json"
 hash = "47826b78192436ff2db95d14fd005fbd846cd4c278f887da7c00122f6c083d31"
+
+[[files]]
+file = "config/jei/jei-client.ini"
+hash = "f88ea8eb9a205c0eba0fb0c3547597ac5b57750fcd2c08c21f132001b21c8456"
 
 [[files]]
 file = "config/lithostitched.json"
@@ -494,11 +502,6 @@ hash = "eb6ad47f2b7c7ff26d91547f01cc5262ccb8bdaa2ac36c6c7330872ba683e199"
 metafile = true
 
 [[files]]
-file = "mods/portalblaster.pw.toml"
-hash = "efaf6952d23eb69e9ae1082664fcfd5946985828ab05709b14a3c4778a64751d"
-metafile = true
-
-[[files]]
 file = "mods/puzzles-lib.pw.toml"
 hash = "1f5a989a0469d5a2c09fc2ca6f546788cc27113b1186a653600f84ffeda5ca0c"
 metafile = true
@@ -624,11 +627,6 @@ hash = "b281804e87cc6cab7b8cc326296d422bd629f6260ad21f178f5032fc56e40d02"
 metafile = true
 
 [[files]]
-file = "mods/xaeros-playerposition.pw.toml"
-hash = "5f5037679a2db88dd252fccf3e53ea83c166e2065536af9fcfa55d5ca46b18c1"
-metafile = true
-
-[[files]]
 file = "mods/xaeros-world-map.pw.toml"
 hash = "6e2cb94c1dd5084525f15866dfddf9dc46946681db90c42b931c2446c4df2b8a"
 metafile = true
@@ -644,11 +642,6 @@ hash = "1dd70b64b0456f3d4f9632c86b696042e6c66560a46bda488a633e0f7df755b3"
 metafile = true
 
 [[files]]
-file = "mods/yamato-gun.pw.toml"
-hash = "6dad277330aad08bc4001a100ee4ccfbda98e7a2a5c9b3898a48b1a23d70c820"
-metafile = true
-
-[[files]]
 file = "mods/yori3os-grappling-hooks.pw.toml"
 hash = "ce76916b18334db4a0f8f50c3d4f10e49a4d2613cf1c168e736d65e8992506dd"
 metafile = true
@@ -657,3 +650,7 @@ metafile = true
 file = "mods/zoomify.pw.toml"
 hash = "9205d4328d9d946ed42955f1da09207233f081d47ee8799f7a762d979539a5e9"
 metafile = true
+
+[[files]]
+file = "servers.dat"
+hash = "41c93e1d924795b6b77dc940e5b9e05e5f0a257762f8af2cb339291265540f93"
