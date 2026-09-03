@@ -40,6 +40,9 @@ $include = @(
 if (Test-Path $Out) { Remove-Item -LiteralPath $Out -Force }
 $zip = [IO.Compression.ZipFile]::Open($Out, [IO.Compression.ZipArchiveMode]::Create)
 try {
+    # Explorer renders a zip with no directory entries as an empty folder on some
+    # Windows configurations, so write them explicitly.
+    foreach ($d in @("$name/", "$name/minecraft/")) { $zip.CreateEntry($d) | Out-Null }
     foreach ($i in $include) {
         if (-not (Test-Path -LiteralPath $i.src)) { Write-Host "  skipped (absent): $($i.entry)" -ForegroundColor DarkYellow; continue }
         [IO.Compression.ZipFileExtensions]::CreateEntryFromFile($zip, $i.src, $i.entry) | Out-Null
