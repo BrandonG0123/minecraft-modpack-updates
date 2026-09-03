@@ -1,0 +1,18 @@
+[General]
+ConfigVersion=1.3
+InstanceType=OneSix
+name=Tylers Mods
+iconKey=default
+notes=Auto-updating pack. Mods sync from GitHub before every launch.\nYour shaders, resource packs, worlds, screenshots, waypoints and options.txt are never touched.
+AutomaticJava=true
+JavaArchitecture=64
+OverrideCommands=true
+PreLaunchCommand=__PRELAUNCH__
+PostExitCommand=
+WrapperCommand=
+OverrideMemory=true
+MinMemAlloc=1024
+MaxMemAlloc=6144
+PermGen=128
+ShowConsoleOnError=true
+LogPrePostOutput=true
