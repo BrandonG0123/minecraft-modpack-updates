@@ -654,3 +654,18 @@ metafile = true
 [[files]]
 file = "servers.dat"
 hash = "41c93e1d924795b6b77dc940e5b9e05e5f0a257762f8af2cb339291265540f93"
+
+[[files]]
+file = "shaderpacks/makeup-ultra-fast-shaders.pw.toml"
+hash = "9a29ed49f8bbbe99d546e77b3f90ab71c6d323388f5f26d9fb981a02e09fbb19"
+metafile = true
+
+[[files]]
+file = "shaderpacks/potato-shaders.pw.toml"
+hash = "439334dd4f3860b6755251fd5e47093e2f3df077cd092c8bf59916cfde8bb308"
+metafile = true
+
+[[files]]
+file = "shaderpacks/solas-shader.pw.toml"
+hash = "7bf1d2183c1552f1f8b22ff8d08c7e9ea2b7fae1e8aa013b4b0f24364effbc0c"
+metafile = true

@@ -23,6 +23,9 @@ $blocked = @(
 $allowed = @(
     "config/chesttracker.json5"   # GUI layout: keeps its buttons out of JEI's column
     "servers.dat"                 # seeds the server list on a fresh install
+    "shaderpacks/solas-shader.pw.toml"            # curated shader: medium preset
+    "shaderpacks/makeup-ultra-fast-shaders.pw.toml" # curated shader: light preset
+    "shaderpacks/potato-shaders.pw.toml"          # curated shader: lightest preset
 )
 $index = Join-Path $Pack 'index.toml'
 $entries = Select-String -LiteralPath $index -Pattern '^file = "(.+)"$' |
