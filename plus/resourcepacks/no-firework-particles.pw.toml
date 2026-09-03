@@ -1,0 +1,13 @@
+name = "No Firework Particles"
+filename = "No Firework Particles.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/LCeqfxHG/versions/qYN29z3N/No%20Firework%20Particles.zip"
+hash-format = "sha512"
+hash = "7b78b225ea395686471ba1ebf5b7fc32772b6d3cb2dfa97dc39bdca13d0351276011723c8e2fe5e8e0b517665a1dcd35ab0c551d8f73137e0fba4028d9cfc2f1"
+
+[update]
+[update.modrinth]
+mod-id = "LCeqfxHG"
+version = "qYN29z3N"

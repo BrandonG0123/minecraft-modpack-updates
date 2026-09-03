@@ -1,0 +1,13 @@
+name = "Clarity PvP Pack + FPS Boost"
+filename = "Clarity PvP 1.20-26.1 v.01.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/qK0Nm31Z/versions/mqbHd8zM/Clarity%20PvP%201.20-26.1%20v.01.zip"
+hash-format = "sha512"
+hash = "b325c905048af794923fa59fbfa4ec57f3a60572c18c8f5ed635e92a471217a5647d147132168745d3219ac9ae4226b2437866e191157abbd57533050a63cbe3"
+
+[update]
+[update.modrinth]
+mod-id = "qK0Nm31Z"
+version = "mqbHd8zM"

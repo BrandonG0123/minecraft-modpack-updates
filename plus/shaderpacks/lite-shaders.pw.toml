@@ -1,0 +1,13 @@
+name = "E-LITE shaders (MakeUp edit)"
+filename = "Â§lE-LITE shaders 5.1.1.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/LTvf5Tji/versions/6nZNz46h/%C2%A7lE-LITE%20shaders%205.1.1.zip"
+hash-format = "sha512"
+hash = "bb81f4e7742407298a5d807245cd88b7ee3f15c5b790abdaa570e8228fabfd1a4addf38fcada4df0d23f24d372ca0a0b540ccf4de1189fc8561bf6e746b4af88"
+
+[update]
+[update.modrinth]
+mod-id = "LTvf5Tji"
+version = "6nZNz46h"

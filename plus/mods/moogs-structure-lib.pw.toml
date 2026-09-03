@@ -1,0 +1,13 @@
+name = "Moog's Structure Lib (moogs_structures)"
+filename = "moogs_structures-fabric-1.21.11-3.0.3.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/1oUDhxuy/versions/PNKhy24q/moogs_structures-fabric-1.21.11-3.0.3.jar"
+hash-format = "sha512"
+hash = "84d04f4a7cb74473ba86b9bb7d29c73568e5bda621f0c71a583b9903b0f28ac68f83b79dbafc01576e16a883f5b6941065669fcfa0fba448aaff6dd70621ff48"
+
+[update]
+[update.modrinth]
+mod-id = "1oUDhxuy"
+version = "PNKhy24q"

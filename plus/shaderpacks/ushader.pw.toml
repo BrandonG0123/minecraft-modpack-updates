@@ -1,0 +1,13 @@
+name = "UShader"
+filename = "UShader_v2.2.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/UDDa70lE/versions/rfCVvTvJ/UShader_v2.2.zip"
+hash-format = "sha512"
+hash = "09ab80742840d0dbb43259cdff1df9aa30c38c24f0aa99f825edb36a1b6f696735a760d3348885008215e1abd41de7b9ecdc48bc888aff69a1458e187337055f"
+
+[update]
+[update.modrinth]
+mod-id = "UDDa70lE"
+version = "rfCVvTvJ"

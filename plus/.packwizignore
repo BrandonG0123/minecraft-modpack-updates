@@ -1,0 +1,12 @@
+# Files here are never part of the distributed pack.
+_backups/
+tools/
+.git/
+.github/
+*.md
+.gitignore
+.packwizignore
+.nojekyll
+
+# the friend-facing instance zip is a download, not pack content
+*.zip

@@ -1,0 +1,13 @@
+name = "ENHANCED LEGENDARY RT JAVA TEXTURES"
+filename = "ELRT JAVA TEXTURES - BASE PACK v0.4 - 128x.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/ioNGu47u/versions/UNrwvz2M/ELRT%20JAVA%20TEXTURES%20-%20BASE%20PACK%20v0.4%20-%20128x.zip"
+hash-format = "sha512"
+hash = "4c03dbfdb818ff160082453c04ed01b82bd0e2d58610abe37ef8f4d5b259d94f25f00f4449ba614f35b6f65a229cf5f512e5a5f73da6fa9e1d074e0edbd3bd97"
+
+[update]
+[update.modrinth]
+mod-id = "ioNGu47u"
+version = "UNrwvz2M"

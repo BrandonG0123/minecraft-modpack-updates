@@ -1,0 +1,23 @@
+# Extra configs shipped ONLY in the PLUS pack - Tyler's personal preferences.
+# These are seeds: a friend's own edits survive unless the pack's copy changes.
+options.txt
+config/sodium-options.json
+config/sodium-extra-options.json
+config/sodium-extra.properties
+config/iris.properties
+config/zoomify.json
+config/litematica.json
+config/malilib.json
+config/xaerohud.txt
+config/entity_texture_features.json
+config/entity_model_features.json
+config/continuity.json
+config/fallingleaves2.json
+config/dynamic_fps.json
+config/entityculling.json
+config/moreculling.toml
+config/bobby.conf
+config/DistantHorizons.toml
+config/voxy-config.json
+config/appleskin.json5
+config/shulkerboxtooltip-fabric.json

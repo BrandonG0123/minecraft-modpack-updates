@@ -1,0 +1,19 @@
+# BASE pack: lightweight shaders + small mod-support resource packs.
+# Format: <subfolder>/<exact zip filename in your instance>
+
+# --- shaders: one medium, the rest light ---
+shaderpacks/Solas Shader(PBR).zip
+shaderpacks/MakeUp-UltraFast.zip
+shaderpacks/PotatoShaders_v1.0d.zip
+shaderpacks/§lE-LITE shaders (PBR).zip
+shaderpacks/miniature-shader.zip
+
+# --- small mod-support / QoL resource packs (~4 MB total) ---
+resourcepacks/FreshAnimations_v1.10.4.zip
+resourcepacks/+1.21.3 Fresh Moves v3.1.1 (With Animated Eyes).zip
+resourcepacks/Better-Leaves-9.5.zip
+resourcepacks/Fancy Crops v1.3.zip
+resourcepacks/crops-3d(2).zip
+resourcepacks/Recolourful Containers 3.1.3 (1.19.4+).zip
+resourcepacks/EvenBetterEnchants_v3_1.21.5+.zip
+resourcepacks/SodiumTranslations.zip

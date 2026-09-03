@@ -1,0 +1,13 @@
+name = "Lumina Shader - Event Horizon"
+filename = "Lumina_Event_Horizon_v1.3.81.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/9gxVXUDr/versions/MdJJRyBC/Lumina_Event_Horizon_v1.3.81.zip"
+hash-format = "sha512"
+hash = "d99097d26698813158a0f745032bb47939a5a705e22c1e9085a27f67e97847b2e4599b0a4b67b5504b32e175faed16f34066975c0f4187330a4ae0fc8b7c0c7a"
+
+[update]
+[update.modrinth]
+mod-id = "9gxVXUDr"
+version = "MdJJRyBC"

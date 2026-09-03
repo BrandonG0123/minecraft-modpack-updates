@@ -1,32 +1,39 @@
-<#  Refuses to publish if anything player-personal has crept into the pack index.
-    The index is what friends actually download, so that is what we check.  #>
-param([string]$Pack = "$PSScriptRoot\..")
+<#  Refuses to publish if genuinely private data has crept into a pack index.
+    The index is what friends download, so that is what gets checked.
+
+    Both packs legitimately ship mods, configs, shaders and resource packs.
+    What must NEVER ship is data that is personal to Tyler specifically:
+    waypoints, worlds, screenshots, account data, caches.
+
+    -Mode plus additionally permits options.txt and the personal client configs,
+    which the plus pack ships on purpose as first-launch seeds.
+#>
+param(
+    [string]$Pack = "$PSScriptRoot\..",
+    [ValidateSet('base','plus')][string]$Mode = 'base'
+)
 $ErrorActionPreference = 'Stop'
 
-# Paths that must NEVER ship. Matched case-insensitively against index entries.
+# Never ship from either pack. These identify Tyler or his worlds.
 $blocked = @(
-    '^xaero/', '^XaeroWaypoints', '^XaeroWorldMap', 'config/xaero/',
-    'xaerohud\.txt', 'xaeropatreon\.txt', 'xaerominimap\.txt',
+    '^xaero/', '^XaeroWaypoints', '^XaeroWorldMap', 'world-map/',
     '^saves/', '^screenshots/', '^logs/', '^crash-reports/', '^backups/',
-    '^shaderpacks/', '^resourcepacks/', '^schematics/', '^essential/',
+    '^schematics/', '^essential/', '^data/', '^downloads/',
+    '^\.cache/', '^\.bobby/', '^\.voxy/', '\.mixin\.out',
+    'usercache\.json', 'usernamecache\.json', 'accounts\.json',
+    'command_history', 'TrashSlotSaveState', 'servers\.dat_old',
+    'debug-profile\.json', '^\.fabric/', 'Distant_Horizons_server_data'
+)
+# Personal-but-shippable: base keeps these out, plus ships them as seeds.
+$baseOnlyBlocked = @(
     'options\.txt', 'optionsof\.txt', 'optionsshaders\.txt',
-    'usercache\.json', 'usernamecache\.json',
-    'litematica\.json', 'malilib\.json', 'fzzy_config/keybinds',
-    '\.mixin\.out', '^\.cache/', '^\.bobby/', '^\.voxy/', '^data/',
-    'chesttracker', 'whereisit', 'notes\.json', 'command_history',
-    '\.minecraft', 'accounts\.json', 'TrashSlotSaveState'
+    'litematica\.json', 'malilib\.json', 'xaerohud\.txt'
 )
+if ($Mode -eq 'base') { $blocked += $baseOnlyBlocked }
 
+# Shipped on purpose despite matching a pattern above.
+$allowed = @( 'servers.dat' )
 
-# Deliberately shipped despite matching a blocked pattern above. Each entry here
-# is a conscious decision to centrally manage that file - add to it only on purpose.
-$allowed = @(
-    "config/chesttracker.json5"   # GUI layout: keeps its buttons out of JEI's column
-    "servers.dat"                 # seeds the server list on a fresh install
-    "shaderpacks/solas-shader.pw.toml"            # curated shader: medium preset
-    "shaderpacks/makeup-ultra-fast-shaders.pw.toml" # curated shader: light preset
-    "shaderpacks/potato-shaders.pw.toml"          # curated shader: lightest preset
-)
 $index = Join-Path $Pack 'index.toml'
 $entries = Select-String -LiteralPath $index -Pattern '^file = "(.+)"$' |
            ForEach-Object { $_.Matches[0].Groups[1].Value }
@@ -41,11 +48,11 @@ foreach ($e in $entries) {
 
 if ($hits.Count) {
     Write-Host ""
-    Write-Host "*** BLOCKED - personal data found in the pack index ***" -ForegroundColor Red
+    Write-Host "*** BLOCKED [$Mode] - private data found in the pack index ***" -ForegroundColor Red
     $hits | ForEach-Object { Write-Host "  $_" -ForegroundColor Red }
     Write-Host ""
-    Write-Host "Nothing was pushed. Remove these files from the pack folder and re-run." -ForegroundColor Yellow
+    Write-Host "Nothing was pushed. Remove these from the pack folder and re-run." -ForegroundColor Yellow
     exit 1
 }
-Write-Host "Personal-data guard: clean ($($entries.Count) files checked)" -ForegroundColor DarkGray
+Write-Host "Guard [$Mode]: clean ($($entries.Count) files checked)" -ForegroundColor DarkGray
 exit 0

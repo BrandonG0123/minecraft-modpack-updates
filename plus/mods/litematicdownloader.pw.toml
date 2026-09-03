@@ -1,0 +1,13 @@
+name = "LitematicDownloader"
+filename = "litematic-downloader-1.1.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/T3G2Q24n/versions/rNZ93smJ/litematic-downloader-1.1.4.jar"
+hash-format = "sha512"
+hash = "c29be59fa206a065499c2126ab9670f26baa52f3e4322ebeb63b7a0b8d9c66fa70297e4183f82e5bfe5e59f352d7d69e92879ab7425fb315e91f51c963da90a2"
+
+[update]
+[update.modrinth]
+mod-id = "T3G2Q24n"
+version = "rNZ93smJ"

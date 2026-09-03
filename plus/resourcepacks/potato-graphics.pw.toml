@@ -1,0 +1,13 @@
+name = "Potato Graphics"
+filename = "Potato v6.2.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/QUvmr7uI/versions/O8rn81iJ/Potato%20v6.2.zip"
+hash-format = "sha512"
+hash = "f34c87fca0733208bea04162b168e5ee9897cbe1b910a32d7abb3cd69dfacb5fdaa0f458512c45256707bbc186dce3b9538da703672412a1bc741172759b1edc"
+
+[update]
+[update.modrinth]
+mod-id = "QUvmr7uI"
+version = "O8rn81iJ"

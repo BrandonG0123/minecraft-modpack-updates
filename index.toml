@@ -652,12 +652,62 @@ hash = "9205d4328d9d946ed42955f1da09207233f081d47ee8799f7a762d979539a5e9"
 metafile = true
 
 [[files]]
+file = "resourcepacks/3d-crops.pw.toml"
+hash = "75a49e8196b6b29009bfec5bcd739697f2f0d77c956957c39e89f5a778dbcb6f"
+metafile = true
+
+[[files]]
+file = "resourcepacks/better-leaves.pw.toml"
+hash = "669fe7b60ab8154d73160aadb8742c719f00d7d86e55a65991e644b82fdb1ad9"
+metafile = true
+
+[[files]]
+file = "resourcepacks/even-better-enchants.pw.toml"
+hash = "662cce986ae10e9b46b01fff391f1a76acf63adbaa486c83f59315b5cd8c217c"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fancy-crops.pw.toml"
+hash = "2a089b60d8c72248bb945bfa8fef3f4e7012f520425d51b70810c801dd298ea3"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fresh-animations.pw.toml"
+hash = "1438f4f9dc02e892cce3a684195e6f62ef8f9628b40bc0208813a5c348fcccdb"
+metafile = true
+
+[[files]]
+file = "resourcepacks/recolourful-containers-gui.pw.toml"
+hash = "e13d2c598442c2856d3693c429f274966d298f42019f4626a8e2e822c31a8538"
+metafile = true
+
+[[files]]
+file = "resourcepacks/translations-for-sodium.pw.toml"
+hash = "52a2594915ec230a3921f53131fdd8ed035c88341f614774b87482e450123d2b"
+metafile = true
+
+[[files]]
+file = "resourcepacks/tras-fresh-player.pw.toml"
+hash = "3f66498fb4e456ebd4944aac4643b071139b9d51c2f97339a9f6faf75087c684"
+metafile = true
+
+[[files]]
 file = "servers.dat"
 hash = "41c93e1d924795b6b77dc940e5b9e05e5f0a257762f8af2cb339291265540f93"
 
 [[files]]
+file = "shaderpacks/lite-shaders.pw.toml"
+hash = "ddf4441cf14aa0687daf0e26fc098f8c9d83bafd775715dd601c9a2a2b145fef"
+metafile = true
+
+[[files]]
 file = "shaderpacks/makeup-ultra-fast-shaders.pw.toml"
 hash = "9a29ed49f8bbbe99d546e77b3f90ab71c6d323388f5f26d9fb981a02e09fbb19"
+metafile = true
+
+[[files]]
+file = "shaderpacks/miniature-shader.pw.toml"
+hash = "5e7c6a6fd304073ed0f9ae59860356fbdeeae63c98bcaca845305b3f35fb67fe"
 metafile = true
 
 [[files]]

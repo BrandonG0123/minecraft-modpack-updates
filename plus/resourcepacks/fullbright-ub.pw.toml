@@ -1,0 +1,13 @@
+name = "Fullbright UB"
+filename = "Fullbright-UB-1.21 fub-6.0.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/ItHr72Fy/versions/bjc4gBmv/Fullbright-UB-1.21%20fub-6.0.zip"
+hash-format = "sha512"
+hash = "36923816ad229c2f18fc33eae8e46fad79e97ad842fda004f88def63d6f9b1622cab2ea1eeabbc8b370151c420322ac4d13350ee2f32d642bb9a1afefa1ae8a7"
+
+[update]
+[update.modrinth]
+mod-id = "ItHr72Fy"
+version = "bjc4gBmv"

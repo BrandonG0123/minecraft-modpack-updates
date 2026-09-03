@@ -1,0 +1,13 @@
+name = "Alacrity"
+filename = "Alacrity.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/PUUpX2qq/versions/gmcptwnY/Alacrity.zip"
+hash-format = "sha512"
+hash = "467b3197cce480b37178745d0cacec328651608e7154d502a3484e577c7b3a87a74a0da089a7edb27fd4b17bbf6da2b93f4af1ef125e1b20409aa80ea18a8d5c"
+
+[update]
+[update.modrinth]
+mod-id = "PUUpX2qq"
+version = "gmcptwnY"

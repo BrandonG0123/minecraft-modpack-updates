@@ -10,13 +10,24 @@
 #>
 param(
     [string]$Instance = "$env:APPDATA\PrismLauncher\instances\Tylers Mods",
-    [string]$Out      = "$PSScriptRoot\..\Tylers Mods.zip",
-    [string]$PackUrl  = "https://brandong0123.github.io/minecraft-modpack-updates/pack.toml"
+    [ValidateSet("base","plus")][string]$Variant = "base",
+    [string]$Out,
+    [string]$PackUrl
 )
+$base = "https://brandong0123.github.io/minecraft-modpack-updates"
+if ($Variant -eq "plus") {
+    if (-not $Out)     { $Out     = "$PSScriptRoot\..\Tylers Mods Plus.zip" }
+    if (-not $PackUrl) { $PackUrl = "$base/plus/pack.toml" }
+    $instName = "Tylers Mods Plus"
+} else {
+    if (-not $Out)     { $Out     = "$PSScriptRoot\..\Tylers Mods.zip" }
+    if (-not $PackUrl) { $PackUrl = "$base/pack.toml" }
+    $instName = "Tylers Mods"
+}
 $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.IO.Compression
 Add-Type -AssemblyName System.IO.Compression.FileSystem
-$name = 'Tylers Mods'
+$name = $instName
 
 # --- build instance.cfg from the template --------------------------------
 # Prism's canonical form: inner quotes escaped as \" with no outer wrapping.
@@ -24,8 +35,8 @@ $q = [char]92 + '"'
 $pre = "$q`$INST_JAVA$q -jar $q`$INST_MC_DIR/packwiz-installer-bootstrap.jar$q" +
        " --bootstrap-main-jar $q`$INST_MC_DIR/packwiz-installer.jar$q" +
        " --pack-folder $q`$INST_MC_DIR$q --multimc-folder $q`$INST_DIR$q" +
-       " --title ${q}Tylers Mods$q -s client $PackUrl"
-$cfg = ([IO.File]::ReadAllText("$PSScriptRoot\friend-instance.cfg.template")).Replace('__PRELAUNCH__', $pre)
+       " --title $q$instName$q -s client $PackUrl"
+$cfg = ([IO.File]::ReadAllText("$PSScriptRoot\friend-instance.cfg.template")).Replace('__PRELAUNCH__', $pre).Replace('name=Tylers Mods', "name=$instName")
 
 $tmp = Join-Path $env:TEMP 'friend-instance.cfg'
 [IO.File]::WriteAllText($tmp, $cfg)

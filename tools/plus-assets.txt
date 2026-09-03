@@ -1,0 +1,47 @@
+# PLUS pack: everything the base has, plus the heavy shaders and full texture packs.
+# Complementary (Reimagined + Unbound) and Kappa are deliberately excluded.
+# iterationT and Xray Ultimate are not on Modrinth and cannot be linked.
+
+# --- shaders: all of yours except Complementary and Kappa ---
+shaderpacks/Solas Shader(PBR).zip
+shaderpacks/MakeUp-UltraFast.zip
+shaderpacks/PotatoShaders_v1.0d.zip
+shaderpacks/§lE-LITE shaders (PBR).zip
+shaderpacks/miniature-shader.zip
+shaderpacks/BSL(PBR).zip
+shaderpacks/Bliss.zip
+shaderpacks/photon(PBR).zip
+shaderpacks/§r§lAstra§4§lLex§r§l(PBR).zip
+shaderpacks/Fantasy Shaders Reimagined(PBR).zip
+shaderpacks/FastPBR.zip
+shaderpacks/Lumina_Event_Horizon_v1.3.81.zip
+shaderpacks/Mellow Shader(PBR).zip
+shaderpacks/UShader_v2.2.zip
+
+# --- resource packs: all of yours that are on Modrinth ---
+resourcepacks/FreshAnimations_v1.10.4.zip
+resourcepacks/+1.21.3 Fresh Moves v3.1.1 (With Animated Eyes).zip
+resourcepacks/Better-Leaves-9.5.zip
+resourcepacks/Fancy Crops v1.3.zip
+resourcepacks/crops-3d(2).zip
+resourcepacks/Recolourful Containers 3.1.3 (1.19.4+).zip
+resourcepacks/EvenBetterEnchants_v3_1.21.5+.zip
+resourcepacks/SodiumTranslations.zip
+resourcepacks/Patrix_1.21.11_32x_basic.zip
+resourcepacks/ELRT JAVA TEXTURES - BASE PACK v0.4 - 128x.zip
+resourcepacks/Alacrity.zip
+resourcepacks/Faithful 64x - December 2025 Release.zip
+resourcepacks/Default HD 128x Demo 1.8.2.6.zip
+resourcepacks/Vanilla Mashup 1.5.zip
+resourcepacks/Excalibur_V26.1_01.zip
+resourcepacks/Ashen_16x.zip
+resourcepacks/HumanEraVillagersIllagers[3.91.5].zip
+resourcepacks/Bare Bones 1.21.11.zip
+resourcepacks/1x1 ultimate.zip
+resourcepacks/Potato v6.2.zip
+resourcepacks/Clarity PvP 1.20-26.1 v.01.zip
+resourcepacks/Fast Better Grass.zip
+resourcepacks/Fullbright-UB-1.21 fub-6.0.zip
+resourcepacks/LowOnFire v26.2§8.zip
+resourcepacks/No Firework Particles.zip
+resourcepacks/Short Swords.zip

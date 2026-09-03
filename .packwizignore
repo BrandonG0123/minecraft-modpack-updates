@@ -10,3 +10,6 @@ tools/
 
 # the friend-facing instance zip is a download, not pack content
 *.zip
+
+# the plus pack is a separate packwiz pack with its own index
+plus/

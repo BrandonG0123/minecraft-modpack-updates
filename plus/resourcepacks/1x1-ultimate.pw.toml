@@ -1,0 +1,13 @@
+name = "1x1 ultimate"
+filename = "1x1 ultimate.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/uW0dbsp3/versions/362xcRyO/1x1%20ultimate.zip"
+hash-format = "sha512"
+hash = "1333d69d2eb750277a6cc67abde8e4a15258510ba1c7eafd83dd1cbe36e0063dda0faea03b48bf64503c525a45c35f6dccc0144ba571ccb3d61f8f9abfd40739"
+
+[update]
+[update.modrinth]
+mod-id = "uW0dbsp3"
+version = "362xcRyO"

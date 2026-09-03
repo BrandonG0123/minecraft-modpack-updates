@@ -1,0 +1,13 @@
+name = "AstraLex Shaders"
+filename = "Â§rÂ§lAstraÂ§4Â§lLexÂ§rÂ§l_By_LexBoosT_Â§4Â§lV93.0Â§rÂ§l.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/RphJSnEs/versions/qSbtQS2o/%C2%A7r%C2%A7lAstra%C2%A74%C2%A7lLex%C2%A7r%C2%A7l_By_LexBoosT_%C2%A74%C2%A7lV93.0%C2%A7r%C2%A7l.zip"
+hash-format = "sha512"
+hash = "171131e16b65af67c3ed2fe75f3bde9d81f66b4e921ba3ca33187cff7c87b40e1f21637e95e2fa3a1567b0717374809b18adc240c5ef74622c8e9317ecc14f9d"
+
+[update]
+[update.modrinth]
+mod-id = "RphJSnEs"
+version = "qSbtQS2o"
