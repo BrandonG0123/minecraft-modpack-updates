@@ -1,0 +1,13 @@
+name = "Deeper Dark"
+filename = "deeper_dark-4.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/nHr26oc2/versions/SARMF8j6/deeper_dark-4.4.jar"
+hash-format = "sha512"
+hash = "c89563267f9ee8311b143dbe764b8dc02bb65c9819e4483b131c08c442115349a0267546b04be4c4e40a203b8e793ea381b0ac38d8e77ed6913676fd4d42538d"
+
+[update]
+[update.modrinth]
+mod-id = "nHr26oc2"
+version = "SARMF8j6"

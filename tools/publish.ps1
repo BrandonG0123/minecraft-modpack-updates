@@ -5,10 +5,13 @@ $packwiz = "$Pack\tools\bin\packwiz.exe"
 
 & $packwiz --pack-file "$Pack\pack.toml" refresh
 Push-Location "$Pack\plus"; & $packwiz refresh; Pop-Location
+Push-Location "$Pack\modsonly"; & $packwiz refresh; Pop-Location
 
 & "$PSScriptRoot\guard-personal-data.ps1" -Pack $Pack -Mode base
 if ($LASTEXITCODE -ne 0) { exit 1 }
 & "$PSScriptRoot\guard-personal-data.ps1" -Pack "$Pack\plus" -Mode plus
+if ($LASTEXITCODE -ne 0) { exit 1 }
+& "$PSScriptRoot\guard-personal-data.ps1" -Pack "$Pack\modsonly" -Mode modsonly
 if ($LASTEXITCODE -ne 0) { exit 1 }
 
 # rebuild both friend zips so instance.cfg always matches the live pack URLs

@@ -422,11 +422,6 @@ hash = "18b7edb33c49c0a0413baefbf55082bea5f4fdd31a6777788dbdd52b8b197dbc"
 metafile = true
 
 [[files]]
-file = "mods/mcpitanlibarch.pw.toml"
-hash = "936b8573296193d3426a578ba82da706fd208fc5906543f02c61ef073ba10710"
-metafile = true
-
-[[files]]
 file = "mods/mes-moogs-end-structures.pw.toml"
 hash = "e172150fdffed16b063f92510f95397379fe2ed8cc0fb53650a3623e30357cbb"
 metafile = true

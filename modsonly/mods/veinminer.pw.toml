@@ -1,0 +1,13 @@
+name = "VeinMiner"
+filename = "veinminer-fabric-2.11.2+1.21.11.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/OhduvhIc/versions/7c3RO0Qs/veinminer-fabric-2.11.2%2B1.21.11.jar"
+hash-format = "sha512"
+hash = "778d0dae44fa1f984b88a84e8ddf1da2c2f80afe7295c2f8ffa313cd902f89d334e05148c9e9fa366290220db867e2486d42ab92db95eb29c298434b60a2ebeb"
+
+[update]
+[update.modrinth]
+mod-id = "OhduvhIc"
+version = "7c3RO0Qs"

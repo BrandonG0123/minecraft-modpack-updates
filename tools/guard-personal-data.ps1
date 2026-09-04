@@ -10,7 +10,7 @@
 #>
 param(
     [string]$Pack = "$PSScriptRoot\..",
-    [ValidateSet('base','plus')][string]$Mode = 'base'
+    [ValidateSet('base','plus','modsonly')][string]$Mode = 'base'
 )
 $ErrorActionPreference = 'Stop'
 
@@ -37,6 +37,19 @@ $allowed = @( 'servers.dat' )
 $index = Join-Path $Pack 'index.toml'
 $entries = Select-String -LiteralPath $index -Pattern '^file = "(.+)"$' |
            ForEach-Object { $_.Matches[0].Groups[1].Value }
+
+# modsonly is defined by what it excludes: anything outside mods/ is a bug.
+if ($Mode -eq 'modsonly') {
+    $stray = @($entries | Where-Object { $_ -notlike 'mods/*' })
+    if ($stray.Count) {
+        Write-Host ""
+        Write-Host "*** BLOCKED [modsonly] - pack must contain ONLY mods/ ***" -ForegroundColor Red
+        $stray | ForEach-Object { Write-Host "  $_" -ForegroundColor Red }
+        exit 1
+    }
+    Write-Host "Guard [modsonly]: clean ($($entries.Count) files, all under mods/)" -ForegroundColor DarkGray
+    exit 0
+}
 
 $hits = @()
 foreach ($e in $entries) {

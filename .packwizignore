@@ -13,3 +13,6 @@ tools/
 
 # the plus pack is a separate packwiz pack with its own index
 plus/
+
+# the mods-only pack is a separate packwiz pack with its own index
+modsonly/

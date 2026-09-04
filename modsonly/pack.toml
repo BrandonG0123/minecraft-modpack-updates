@@ -1,0 +1,13 @@
+name = "Tylers Mods (mods only)"
+author = "brandon.pgreene"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "d0e4e329a3f01d4eb99e3fa0cd1b015aeb78c44d665c120c434411097b0651a7"
+
+[versions]
+fabric = "0.19.3"
+minecraft = "1.21.11"

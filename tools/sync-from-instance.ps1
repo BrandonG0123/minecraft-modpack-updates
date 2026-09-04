@@ -53,6 +53,13 @@ Copy-Item -Force (Join-Path $Pack 'pack.toml')   (Join-Path $plus 'pack.toml.tmp
 Remove-Item (Join-Path $plus 'pack.toml.tmp') -ErrorAction SilentlyContinue
 Write-Host "  mods + config + servers.dat mirrored"
 
+# ---------- 3b. mods-only pack: nothing but the mods ----------
+$modsonly = Join-Path $Pack 'modsonly'
+$mo = Join-Path $modsonly 'mods'
+if (Test-Path $mo) { Remove-Item -Recurse -Force $mo }
+Copy-Item -Recurse -Force (Join-Path $Pack 'mods') $mo
+Write-Host "  mods mirrored into modsonly/ (no configs, no server, no assets)" -ForegroundColor DarkCyan
+
 # ---------- 4. plus-only personal configs ----------
 $n = 0
 foreach ($rel in (Get-Content "$PSScriptRoot\plus-configs.txt" | Where-Object { $_ -and $_ -notmatch '^\s*#' })) {
@@ -81,4 +88,5 @@ foreach ($d in 'shaderpacks','resourcepacks') {
 Write-Host "== Refreshing indexes ==" -ForegroundColor Cyan
 & $packwiz --pack-file (Join-Path $Pack 'pack.toml') refresh
 & $packwiz --pack-file (Join-Path $plus 'pack.toml') refresh
+& $packwiz --pack-file (Join-Path $modsonly 'pack.toml') refresh
 Write-Host "Sync complete. Run publish.bat to push both packs." -ForegroundColor Green
