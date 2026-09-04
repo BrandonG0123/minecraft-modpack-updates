@@ -729,7 +729,7 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "890c0843fe0632107895d7775c01879fc11425804f1b2be07f642a1a1d9624af"
+hash = "30e26c7a332836008ecb6a80d159cf8d464ec9fc565512668f4b29279e008d24"
 
 [[files]]
 file = "resourcepacks/1x1-ultimate.pw.toml"
