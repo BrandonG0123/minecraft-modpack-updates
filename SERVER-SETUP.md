@@ -37,23 +37,35 @@ Verified by real installs: `-s server` -> 74 mods + 29 configs + 0 shaders +
 
 ---
 
-## Task 1 - the server will not start
+## Task 1 - the server will not start (CAUSE CONFIRMED)
 
-It was killed while shutting down (`start.bat` closed mid-stop). In order of
-likelihood:
+Diagnosed from `logs/latest.log` on 2026-09-04. It is NOT the interrupted
+shutdown - no Java process was running. Fabric refused to start because
+client-only mods are present without their dependencies:
 
-1. **Old Java process still alive**, holding port 25565 and the world session
-   lock. `tasklist | findstr java` then `taskkill /F /IM java.exe /IM javaw.exe`.
-   This is the usual cause.
-2. **Port still bound** - `netstat -ano | findstr :25565`, kill the owning PID.
-3. **Stale `world/session.lock`** - safe to delete, it is recreated.
-4. **`world/level.dat` truncated mid-write** - restore from `world/level.dat_old`
-   (back up the `world` folder first).
+    Mod 'Voxy' (voxy) 0.2.16-beta requires ... sodium, which is missing!
+    Mod 'Yori3o's Grappling Hooks' (yo_hooks) 5.0.1 requires
+      yet_another_config_lib_v3, which is missing!
 
-`start.bat` probably closes instantly and hides the error. Run it from an
-already-open `cmd`, or read the tail of `logs/latest.log`.
+Voxy hard-depends on Sodium, which is client-only and can never be on a
+dedicated server. yo_hooks needs YACL, which is simply absent from whatever
+manual copy populated this mods folder.
 
-**Never** delete the `world` folder or any `region/*.mca` files.
+Minimal fix - delete both jars, then start:
+
+    del mods\voxy-0.2.16-beta+1.21.11.jar
+    del mods\yo_hooks-5.0.1.jar
+
+Better fix - do Task 2 instead and let the updater own the folder. It installs
+the correct 73 server-safe mods, which excludes Voxy automatically and includes
+YACL so yo_hooks resolves. The mods on this server came from a hand copy and are
+well out of date (Terralith 2.5.14 vs 2.6.1, Fabric API 0.141.1 vs 0.141.6,
+BOP 21.11.0.11 vs .32).
+
+The server-safe count is 73, not 74. A mod's own fabric.mod.json environment
+field is not sufficient: Voxy declares it runs anywhere, yet cannot run
+server-side because of its Sodium dependency. The pack now computes a transitive
+closure - any mod hard-depending on a client-only mod becomes client-only too.
 
 ## Task 2 - wire up auto-updating
 
