@@ -96,3 +96,40 @@ and one updater run fixes it.
 - Back up `world/` before anything destructive.
 - If a mod must be dropped, do it on the client PC via `remove-mod.bat`, not by
   deleting jars on the server - the updater would just put it back.
+
+---
+
+## Working agreement for the server session
+
+You are picking this up cold. Assume nothing about the server's contents - the
+client-side session that wrote this has never seen this machine.
+
+**Diagnose before changing anything.** The server was killed mid-shutdown; the
+cause is most likely trivial (a live Java process) and destructive "fixes" would
+be far worse than the problem. Read `logs/latest.log` first.
+
+**Report findings plainly**, including what you could not determine. If the
+cause turns out to be something other than the four listed in Task 1, say so
+rather than forcing the diagnosis to fit.
+
+**Ask before deleting anything not on the safe list.** "Messy" is Brandon's
+judgement of the folder, not a mandate to remove files.
+
+## Things a cold session will not know
+
+- The client PC is `BRANDONBOOK_PRO`. This repo is built there from the Prism
+  instance `Mods(BG and Friends)`, which is the single source of truth for mods.
+- A second Prism instance called `Tylers Mods` existed on the client for testing
+  and has since been deleted. Nothing depends on it; do not go looking.
+- The pack is published straight from `main` via GitHub Pages, so a push is live
+  in about 30-60 seconds. There is no build step and no approval queue.
+- Everything on the client side is already finished and verified: three packs,
+  two importable zips, per-pack guards that block private data, and a one-command
+  publish flow. The server is the only remaining piece.
+- The mod count moves as Brandon adds and removes mods. It was 107 at the time of
+  writing; trust the live index over any number quoted here.
+
+## Reporting back
+
+Brandon relays between machines by hand. Keep any summary short enough to retype
+or screenshot: what was wrong, what changed, and whether the updater is wired in.
