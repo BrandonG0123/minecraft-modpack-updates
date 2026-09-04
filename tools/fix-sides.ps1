@@ -72,6 +72,29 @@ foreach ($f in Get-ChildItem (Join-Path $Pack 'mods') -Filter *.pw.toml -File) {
     $fixed++
 }
 
+# Manual overrides win over anything derived above - derivation cannot know
+# that a mod is capable of running somewhere but unwanted there.
+$ovFile = Join-Path $PSScriptRoot 'side-overrides.txt'
+$applied = @()
+if (Test-Path $ovFile) {
+    foreach ($line in (Get-Content $ovFile | Where-Object { $_.Trim() -and $_ -notmatch '^\s*#' })) {
+        $parts = $line -split '=',2
+        if ($parts.Count -ne 2) { continue }
+        $name = $parts[0].Trim(); $want = $parts[1].Trim()
+        if ($want -notin @('client','server','both')) { Write-Host "  bad override: $line" -ForegroundColor Red; continue }
+        $mf = Join-Path $Pack "mods\$name.pw.toml"
+        if (-not (Test-Path -LiteralPath $mf)) { Write-Host "  override target not in pack: $name" -ForegroundColor DarkYellow; continue }
+        $txt = [IO.File]::ReadAllText($mf)
+        if ($txt -match "(?m)^side = ""$want""$") { continue }
+        [IO.File]::WriteAllText($mf, ($txt -replace '(?m)^side = "(client|server|both)"$', "side = ""$want"""))
+        $applied += "$name -> $want"
+    }
+}
+if ($applied.Count) {
+    Write-Host "  manual overrides applied:" -ForegroundColor Cyan
+    $applied | ForEach-Object { Write-Host "    $_" }
+}
+
 Write-Host "  declared client-only: $seed" -ForegroundColor DarkGray
 if ($promoted.Count) {
     Write-Host "  promoted to client-only (transitive):" -ForegroundColor Yellow

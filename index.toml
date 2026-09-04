@@ -608,7 +608,7 @@ metafile = true
 
 [[files]]
 file = "mods/voxy-worldgen.pw.toml"
-hash = "684e5483fd191d8149f6855bfebe8af8de5f63c74bab09d22a28fa0d5240f064"
+hash = "6a7bb37d5e932e49a2fac08d54067a8b3b02a42ed6d11ca94559454f8b67842a"
 metafile = true
 
 [[files]]

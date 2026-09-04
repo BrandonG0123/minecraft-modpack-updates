@@ -1,0 +1,12 @@
+# Manual side overrides, applied AFTER sides are derived from each jar's
+# fabric.mod.json and after the transitive client-only pass.
+# Format:  <metadata name> = client|server|both        ('#' starts a comment)
+#
+# Use this when a mod is technically able to run somewhere but you don't want
+# it there. Derivation alone cannot know that.
+
+# Voxy World Gen does passive chunk generation. It runs fine on a dedicated
+# server (declares *, only suggests voxy), but Chunky is already installed and
+# does the same job with real controls, and running both is redundant and heavy
+# on CPU and disk. Keep it on clients for singleplayer; keep it off the server.
+voxy-worldgen = client
