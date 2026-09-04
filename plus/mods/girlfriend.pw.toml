@@ -1,0 +1,13 @@
+name = "Girlfriend Mod"
+filename = "girlfriend-mod-2.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/bwE8GnIx/versions/ftcch82j/girlfriend-mod-2.0.0.jar"
+hash-format = "sha512"
+hash = "2f656ae5639ce63f3cad019fbd5c71416ce778a803c6ec41ecd1039dbd066202d6a6e51dd6fbce414ff3c404f471104534294ffc1a98bbff5d103cdab989b37f"
+
+[update]
+[update.modrinth]
+mod-id = "bwE8GnIx"
+version = "ftcch82j"

@@ -122,11 +122,6 @@ hash = "43419b470d94937d6b15be8e13ecc34723e1faa3d60a5746fc48aa96bac04abe"
 metafile = true
 
 [[files]]
-file = "mods/aerial-hell.pw.toml"
-hash = "87eb0b759021f53d3a324fddafe6410640a90ed9f017400534b7e972f2e18fe5"
-metafile = true
-
-[[files]]
 file = "mods/ambientsounds.pw.toml"
 hash = "f819c267c00fa0135b28cb8056fd22b13cd8a4226bb7b1ea05843a9efd593c44"
 metafile = true
@@ -179,11 +174,6 @@ metafile = true
 [[files]]
 file = "mods/bobby.pw.toml"
 hash = "53ee8ace87008f94b5b0bc4e64970c34b13fa4f924c6ac0fc635147577d73a96"
-metafile = true
-
-[[files]]
-file = "mods/breakingbedrock.pw.toml"
-hash = "74acb20950b9b49abb38c37007cda7de05bf6ea36aa3e3b9c5a7c1ee44709b2b"
 metafile = true
 
 [[files]]
@@ -349,6 +339,11 @@ metafile = true
 [[files]]
 file = "mods/geckolib.pw.toml"
 hash = "315038ddc23ec25d22c31ea64a9ceda0578cda57cedc9bf0348393239c4b4bdc"
+metafile = true
+
+[[files]]
+file = "mods/girlfriend.pw.toml"
+hash = "ef595fee85a44414dc9ee5bcf469a482b47abc7475f4bd6b728a0f7daf6c1b09"
 metafile = true
 
 [[files]]
