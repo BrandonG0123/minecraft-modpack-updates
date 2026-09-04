@@ -6,6 +6,11 @@ hash = "43419b470d94937d6b15be8e13ecc34723e1faa3d60a5746fc48aa96bac04abe"
 metafile = true
 
 [[files]]
+file = "mods/aerial-hell.pw.toml"
+hash = "87eb0b759021f53d3a324fddafe6410640a90ed9f017400534b7e972f2e18fe5"
+metafile = true
+
+[[files]]
 file = "mods/ambientsounds.pw.toml"
 hash = "cea000fa5f7be2d8348ef3f804fb5e4a8fb937a97f844dd5b7f076e772bdad53"
 metafile = true
@@ -22,7 +27,7 @@ metafile = true
 
 [[files]]
 file = "mods/audioplayer.pw.toml"
-hash = "d94fe076fe507c4cd5f4bfe48d1ce3ad105333754de2d7235cdcaf908212019c"
+hash = "10142737022ba582f8821abb5a0d2979c64656579438e2cf55ed04fb3db0e40c"
 metafile = true
 
 [[files]]
@@ -103,11 +108,6 @@ metafile = true
 [[files]]
 file = "mods/collective.pw.toml"
 hash = "30f890e038e22fa1101aad98204d29d4acbccc77fad7e41869c71ab4bb369166"
-metafile = true
-
-[[files]]
-file = "mods/config-api.pw.toml"
-hash = "939e2ee5f51ad63ad703e974db11102e9ec3bfc2e5787e18160fea9995b8f8fd"
 metafile = true
 
 [[files]]
@@ -311,6 +311,11 @@ hash = "e172150fdffed16b063f92510f95397379fe2ed8cc0fb53650a3623e30357cbb"
 metafile = true
 
 [[files]]
+file = "mods/mob-ai-tweaks.pw.toml"
+hash = "8157ba53508ff15fab63c6340ba5297dc50deadfaae1f31b2675ee26b0ac0265"
+metafile = true
+
+[[files]]
 file = "mods/modernfix-mvus.pw.toml"
 hash = "dcfa059c99b1809c74a0408745664c77eb6454af6943f0eca577e139685e037d"
 metafile = true
@@ -402,7 +407,7 @@ metafile = true
 
 [[files]]
 file = "mods/simple-voice-chat.pw.toml"
-hash = "a192e750106a5422db2861bc91eb5c633e05a464e555afafbc69bd156ffbe91c"
+hash = "381cff2b233c4295cbf400ba6cef4053e0a39a91061a7c45fd6a14bbf61ca528"
 metafile = true
 
 [[files]]
