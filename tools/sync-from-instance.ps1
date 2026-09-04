@@ -20,6 +20,10 @@ $packwiz = Join-Path $Pack 'tools\bin\packwiz.exe'
 Write-Host "== Importing mods from instance ==" -ForegroundColor Cyan
 Get-ChildItem -LiteralPath (Join-Path $Pack 'mods') -Filter *.pw.toml -File -ErrorAction SilentlyContinue | Remove-Item -Force
 & "$PSScriptRoot\import-from-instance.ps1" -Instance $Instance -Pack $Pack
+# A mod that declares "*" but hard-depends on a client-only mod still cannot run
+# on a dedicated server. Correct those before anything is mirrored.
+& "$PSScriptRoot\fix-sides.ps1" -Instance $Instance -Pack $Pack
+
 # Sides are set by import-from-instance.ps1 from each jar's fabric.mod.json.
 # Clients install with -s client (both + client); the dedicated server uses
 # -s server (both only), so the 33 client-only mods never reach it.

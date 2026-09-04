@@ -1,6 +1,6 @@
 name = "voxy"
 filename = "voxy-0.2.16-beta+1.21.11.jar"
-side = "both"
+side = "client"
 
 [download]
 url = "https://cdn.modrinth.com/data/fxxUqruK/versions/H3w2nVdU/voxy-0.2.16-beta%2B1.21.11.jar"
