@@ -1,6 +1,6 @@
 name = "AmbientSounds"
 filename = "AmbientSounds_FABRIC_v6.3.5_mc1.21.11.jar"
-side = "both"
+side = "client"
 
 [download]
 url = "https://cdn.modrinth.com/data/fM515JnW/versions/JZUqW70J/AmbientSounds_FABRIC_v6.3.5_mc1.21.11.jar"

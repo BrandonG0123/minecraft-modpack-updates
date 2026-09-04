@@ -1,6 +1,6 @@
 name = "LitematicDownloader"
 filename = "litematic-downloader-1.1.4.jar"
-side = "both"
+side = "client"
 
 [download]
 url = "https://cdn.modrinth.com/data/T3G2Q24n/versions/rNZ93smJ/litematic-downloader-1.1.4.jar"

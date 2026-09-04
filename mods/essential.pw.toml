@@ -1,6 +1,6 @@
 name = "Essential Mod"
 filename = "Essential_1-4-1-1_fabric_1-21-11.jar"
-side = "both"
+side = "client"
 
 [download]
 url = "https://cdn.modrinth.com/data/k2ZPuTBm/versions/x9zzI2c8/Essential_1-4-1-1_fabric_1-21-11.jar"

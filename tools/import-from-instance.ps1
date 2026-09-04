@@ -9,6 +9,7 @@ param(
     [switch]$ReportOnly
 )
 $ErrorActionPreference = 'Stop'
+Add-Type -AssemblyName System.IO.Compression.FileSystem
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $UA = 'packwiz-setup/1.0 (github.com/packwiz)'
 
@@ -81,11 +82,22 @@ foreach ($h in $byHash.Keys) {
     $file = $v.files | Where-Object { $_.hashes.sha512 -eq $h } | Select-Object -First 1
     if (-not $file) { $file = $v.files | Where-Object { $_.primary } | Select-Object -First 1 }
 
+    # Side comes from the jar's own fabric.mod.json "environment", not Modrinth's
+    # tags - those are curator-entered and were wrong on several worldgen mods here.
+    #   "client" -> clients only;  "server" -> dedicated server only
+    #   "*" or absent -> both, which is what lets singleplayer's integrated server work
     $side = 'both'
-    if ($pr) {
-        if ($pr.server_side -eq 'unsupported') { $side = 'client' }
-        elseif ($pr.client_side -eq 'unsupported') { $side = 'server' }
-    }
+    try {
+        $zz = [IO.Compression.ZipFile]::OpenRead($jar.FullName)
+        $fe = $zz.Entries | Where-Object { $_.FullName -eq 'fabric.mod.json' } | Select-Object -First 1
+        if ($fe) {
+            $rd = New-Object IO.StreamReader($fe.Open()); $fj = $rd.ReadToEnd(); $rd.Close()
+            if ($fj -match '"environment"\s*:\s*"([^"]+)"') {
+                switch ($Matches[1]) { 'client' { $side = 'client' }; 'server' { $side = 'server' } }
+            }
+        }
+        $zz.Dispose()
+    } catch { }
     $name = if ($pr) { $pr.title } else { $jar.BaseName }
 
     $toml = @"

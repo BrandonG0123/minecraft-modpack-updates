@@ -20,11 +20,9 @@ $packwiz = Join-Path $Pack 'tools\bin\packwiz.exe'
 Write-Host "== Importing mods from instance ==" -ForegroundColor Cyan
 Get-ChildItem -LiteralPath (Join-Path $Pack 'mods') -Filter *.pw.toml -File -ErrorAction SilentlyContinue | Remove-Item -Force
 & "$PSScriptRoot\import-from-instance.ps1" -Instance $Instance -Pack $Pack
-# every mod ships to every player: singleplayer runs an integrated server
-Get-ChildItem -LiteralPath (Join-Path $Pack 'mods') -Filter *.pw.toml -File | ForEach-Object {
-    $t = [IO.File]::ReadAllText($_.FullName) -replace '(?m)^side = "(client|server)"$','side = "both"'
-    [IO.File]::WriteAllText($_.FullName, $t)
-}
+# Sides are set by import-from-instance.ps1 from each jar's fabric.mod.json.
+# Clients install with -s client (both + client); the dedicated server uses
+# -s server (both only), so the 33 client-only mods never reach it.
 
 # ---------- 2. shared configs ----------
 Write-Host "== Shared configs ==" -ForegroundColor Cyan

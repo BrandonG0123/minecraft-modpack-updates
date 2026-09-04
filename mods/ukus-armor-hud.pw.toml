@@ -1,6 +1,6 @@
 name = "uku's Armor HUD"
 filename = "ukus-armor-hud-0.10.2+mc1.21.11.jar"
-side = "both"
+side = "client"
 
 [download]
 url = "https://cdn.modrinth.com/data/wF189hn9/versions/ZDZWmIsH/ukus-armor-hud-0.10.2%2Bmc1.21.11.jar"

@@ -1,6 +1,6 @@
 name = "Camera Utils"
 filename = "camerautils-fabric-1.21.11-1.1.2.jar"
-side = "both"
+side = "client"
 
 [download]
 url = "https://cdn.modrinth.com/data/rrwQMaWQ/versions/iTsiAfu8/camerautils-fabric-1.21.11-1.1.2.jar"

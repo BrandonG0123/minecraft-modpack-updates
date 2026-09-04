@@ -1,6 +1,6 @@
 name = "Cut Through"
 filename = "CutThrough-v21.11.0-mc1.21.11-Fabric.jar"
-side = "both"
+side = "client"
 
 [download]
 url = "https://cdn.modrinth.com/data/Dk6su9JN/versions/reZgj5A6/CutThrough-v21.11.0-mc1.21.11-Fabric.jar"

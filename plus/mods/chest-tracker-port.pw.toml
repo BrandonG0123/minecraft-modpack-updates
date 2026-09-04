@@ -1,6 +1,6 @@
 name = "Chest Tracker (Unofficial port)"
 filename = "chesttracker-2.8.3+1.21.11.jar"
-side = "both"
+side = "client"
 
 [download]
 url = "https://cdn.modrinth.com/data/VC2NohMN/versions/2DCI28rp/chesttracker-2.8.3%2B1.21.11.jar"

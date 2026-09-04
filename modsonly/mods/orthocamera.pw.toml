@@ -1,6 +1,6 @@
 name = "OrthoCamera"
 filename = "OrthoCamera-0.1.10+1.21.11.jar"
-side = "both"
+side = "client"
 
 [download]
 url = "https://cdn.modrinth.com/data/OB69KhRA/versions/P1yNwiWB/OrthoCamera-0.1.10%2B1.21.11.jar"
