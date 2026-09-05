@@ -18,7 +18,7 @@
     "enderiteCrossbowArrowSpeed": 3.65,
     "enderiteCrossBowChargeTime": 35.0,
     "durability": 4096,
-    "maxTeleportCharge": 64,
+    "maxTeleportCharge": 250,
     "enderiteSwordTeleportDistance": 30,
     "spear": {
       "swingAnimationSeconds": 1.25,
@@ -39,7 +39,7 @@
   "armor": {
     "bootsProtection": 4,
     "leggingsProtection": 7,
-    "chestplateProtection": 9,
+    "chestplateProtection": 8,
     "helmetProtection": 4,
     "bodyProtection": 29,
     "durabilityMultiplier": 72,
