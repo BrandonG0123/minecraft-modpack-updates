@@ -32,7 +32,12 @@ if (-not $staged -or $staged.Count -eq 0) { Write-Host "Nothing changed - nothin
 Write-Host "Publishing $($staged.Count) changed file(s)" -ForegroundColor Cyan
 $staged | Select-Object -First 15 | ForEach-Object { Write-Host "  $_" }
 if ($staged.Count -gt 15) { Write-Host "  ... and $($staged.Count - 15) more" }
-git commit -q -m $Message 2>&1 | ForEach-Object { Write-Host "  $_" }
+# Pass the message through a file: quotes and colons in a -m argument get
+# mangled by PowerShell/git argument parsing and abort the commit.
+$msgFile = Join-Path $env:TEMP "packwiz-commit-msg.txt"
+[IO.File]::WriteAllText($msgFile, $Message)
+git commit -q -F $msgFile 2>&1 | ForEach-Object { Write-Host "  $_" }
+Remove-Item $msgFile -Force -ErrorAction SilentlyContinue
 if ($LASTEXITCODE -ne 0) { Write-Host "git commit failed" -ForegroundColor Red; exit 1 }
 git push origin main 2>&1 | ForEach-Object { Write-Host "  $_" }
 if ($LASTEXITCODE -ne 0) { Write-Host "git push FAILED - nothing reached your friends." -ForegroundColor Red; exit 1 }
