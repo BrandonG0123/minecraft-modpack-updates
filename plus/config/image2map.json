@@ -1,5 +1,5 @@
 {
   "allowLocalFiles": false,
-  "minPermLevel": 2,
+  "minPermLevel": 0,
   "maxSize": 2048
 }

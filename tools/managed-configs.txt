@@ -33,3 +33,4 @@ config/jei/jei-client.ini
 # --- mob AI: server-authoritative, must match on server and all clients ---
 config/mob-ai-tweaks/general_config.txt
 config/mob-ai-tweaks/blacklists/modded_bows_and_crossbows.txt
+config/audioplayer/audioplayer-server.properties

@@ -21,6 +21,10 @@ file = "config/appleskin.json5"
 hash = "65edc28ca2bf6bd3e3684ae545fb74bcc0ec935a40d6ac60cb68c00c152e34fb"
 
 [[files]]
+file = "config/audioplayer/audioplayer-server.properties"
+hash = "941750fd3e779833e0af55f71d9d0320c37c284468b5f4bcaf6bfe45528ec40b"
+
+[[files]]
 file = "config/biomesoplenty/biome_toggles.json"
 hash = "4aac664fd2075e0f7915fcf2f7ee7cc61b79e81e2a03049e8d11cba8e706b677"
 
@@ -110,7 +114,7 @@ hash = "810c157db26c7bab75ca4e1846f88b9ef3d3640aae8a1cbc33438813c48ea4c7"
 
 [[files]]
 file = "config/image2map.json"
-hash = "47826b78192436ff2db95d14fd005fbd846cd4c278f887da7c00122f6c083d31"
+hash = "644f39cbb26b75c7fc66004250fc50c6dbdcfc27c6ad2b9ec04a50b96297b9ad"
 
 [[files]]
 file = "config/iris.properties"
