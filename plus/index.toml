@@ -114,7 +114,7 @@ hash = "47826b78192436ff2db95d14fd005fbd846cd4c278f887da7c00122f6c083d31"
 
 [[files]]
 file = "config/iris.properties"
-hash = "fcebc77c9ff1d9a7684864d4030994834c207dc96098717b507b2f77f2c2b6af"
+hash = "3230a974f9fafb88e661e255734135d2fa066385672b31f55f848e71deb6bc8e"
 
 [[files]]
 file = "config/jei/jei-client.ini"
@@ -131,6 +131,10 @@ hash = "d8a63933ec4757186a594debea59dd35724a0a895fe601b324f96217c28312df"
 [[files]]
 file = "config/malilib.json"
 hash = "a78a37bf42ffe9cf069633bd448b0f92e520d999ea858e6b52a9c2ba706cd6d5"
+
+[[files]]
+file = "config/mob-ai-tweaks/general_config.txt"
+hash = "4cd7eacacc613c779d326f42c0e0e9956de56aaf5227d2cbaedbc1c71158fd25"
 
 [[files]]
 file = "config/moreculling.toml"

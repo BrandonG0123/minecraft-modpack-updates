@@ -30,3 +30,5 @@ config/chesttracker.json5
 config/jei/jei-client.ini
 # --- seeds the server list on a fresh install (edits afterwards are kept) ---
 !servers.dat
+# --- mob AI: server-authoritative, must match on server and all clients ---
+config/mob-ai-tweaks/general_config.txt

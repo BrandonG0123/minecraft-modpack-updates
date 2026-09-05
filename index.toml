@@ -85,6 +85,10 @@ file = "config/lithostitched.json"
 hash = "d8a63933ec4757186a594debea59dd35724a0a895fe601b324f96217c28312df"
 
 [[files]]
+file = "config/mob-ai-tweaks/general_config.txt"
+hash = "4cd7eacacc613c779d326f42c0e0e9956de56aaf5227d2cbaedbc1c71158fd25"
+
+[[files]]
 file = "config/rightclickharvest.json5"
 hash = "6eb5169563472ae96184c94e9f42ff7d76fdba403ed3190ffb308e817ea0a21e"
 
