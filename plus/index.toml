@@ -133,6 +133,10 @@ file = "config/malilib.json"
 hash = "a78a37bf42ffe9cf069633bd448b0f92e520d999ea858e6b52a9c2ba706cd6d5"
 
 [[files]]
+file = "config/mob-ai-tweaks/blacklists/modded_bows_and_crossbows.txt"
+hash = "f29cd660a2da0d2c74ffd37253b949ab110a19d145e6f128aa8af91551809e91"
+
+[[files]]
 file = "config/mob-ai-tweaks/general_config.txt"
 hash = "4cd7eacacc613c779d326f42c0e0e9956de56aaf5227d2cbaedbc1c71158fd25"
 
