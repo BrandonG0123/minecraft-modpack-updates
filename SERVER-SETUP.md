@@ -145,3 +145,33 @@ judgement of the folder, not a mandate to remove files.
 
 Brandon relays between machines by hand. Keep any summary short enough to retype
 or screenshot: what was wrong, what changed, and whether the updater is wired in.
+
+---
+
+## Task 4 - voice chat (and therefore AudioPlayer) does not work
+
+Simple Voice Chat needs **UDP on 24454**. This server sits behind a playit.gg
+tunnel (`stapling-missouri.tun.ply.gg`), which carries Minecraft's TCP traffic
+only. `voice_host` in `config/voicechat/voicechat-server.properties` is empty,
+so the server tells clients to send voice to its own local address - unreachable
+from outside the LAN. Voice silently never connects.
+
+AudioPlayer hard-depends on `voicechat_api`, so it fails for the same reason.
+Fixing voice chat fixes both.
+
+**Step 1 (Brandon only - needs his playit.gg account):** create a second tunnel,
+type **UDP**, local port **24454**. It returns an address like
+`something.tun.ply.gg:12345`.
+
+**Step 2:** in the server folder, run
+
+    curl -o set-voice-host.bat https://brandong0123.github.io/minecraft-modpack-updates/tools/dist/set-voice-host.bat
+    set-voice-host.bat something.tun.ply.gg:12345
+
+It backs up the config, sets `voice_host`, and leaves `port=24454` alone (that
+is the local listener, not the public address). Restart the server afterwards.
+
+**Do not** make `voicechat-server.properties` a managed config. `voice_host` is
+specific to this machine's tunnel; shipping the client's copy would overwrite it
+with an empty value on every sync and break voice chat again. It is deliberately
+excluded from all three packs - keep it that way.
