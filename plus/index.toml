@@ -138,7 +138,7 @@ hash = "f29cd660a2da0d2c74ffd37253b949ab110a19d145e6f128aa8af91551809e91"
 
 [[files]]
 file = "config/mob-ai-tweaks/general_config.txt"
-hash = "4cd7eacacc613c779d326f42c0e0e9956de56aaf5227d2cbaedbc1c71158fd25"
+hash = "61e5b25b4ade063a919a5a8e96d5b4f6d30765ab128b7348618ae8fbb738fbf4"
 
 [[files]]
 file = "config/moreculling.toml"
