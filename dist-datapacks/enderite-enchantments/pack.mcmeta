@@ -1,0 +1,8 @@
+{
+  "pack": {
+    "description": "Adds Enderite gear to the vanilla enchantable item tags. The mod only registers durability, bow and crossbow, so without this Enderite tools and armour cannot take Sharpness, Looting, Fortune, Silk Touch, Efficiency or Protection.",
+    "pack_format": 94,
+    "min_format": 94,
+    "max_format": 99
+  }
+}

@@ -726,3 +726,8 @@ metafile = true
 file = "shaderpacks/solas-shader.pw.toml"
 hash = "7bf1d2183c1552f1f8b22ff8d08c7e9ea2b7fae1e8aa013b4b0f24364effbc0c"
 metafile = true
+
+[[files]]
+file = "world/datapacks/enderite-enchantments.pw.toml"
+hash = "7232bfe7a8f557058b8b7a69d4710437085275544bc560a369ae124d8b7408e1"
+metafile = true

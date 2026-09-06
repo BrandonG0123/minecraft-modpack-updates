@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "enderitemod:enderite_pickaxe",
+    "enderitemod:enderite_axe",
+    "enderitemod:enderite_shovel",
+    "enderitemod:enderite_hoe"
+  ]
+}
