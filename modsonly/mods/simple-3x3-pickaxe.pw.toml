@@ -1,0 +1,13 @@
+name = "Simple 3x3 Pickaxe"
+filename = "simple-3x3-pickaxe-fabric-1.21.8.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/4Kwcrq74/versions/Mvx9xP7e/simple-3x3-pickaxe-fabric-1.21.8.jar"
+hash-format = "sha512"
+hash = "a021c25d661f77fbdb54221d34c0a4fa28cf0e27a180a2c0b32ecab081bf4876c0d3fd83fefb76116bd9f4793cede51bb53fa5883cb3a55bd0ce03b48d207a9f"
+
+[update]
+[update.modrinth]
+mod-id = "4Kwcrq74"
+version = "Mvx9xP7e"

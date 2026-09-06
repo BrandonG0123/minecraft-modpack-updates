@@ -50,7 +50,7 @@ hash = "0b05a8814f09fead55b1901b7efab7d3ab87227ea3fc6b5e65a6197261832710"
 
 [[files]]
 file = "config/biomeswevegone/world_generation.json"
-hash = "6fb6ff3e2cb4d1c47431b2e9fb48090fd985e0b43777949ec0c346cda85e532d"
+hash = "4e644f8324221022aed71d39b3d56a6cd189d5bd3f67c4aa72b889fb208421da"
 
 [[files]]
 file = "config/bobby.conf"
@@ -118,7 +118,7 @@ hash = "644f39cbb26b75c7fc66004250fc50c6dbdcfc27c6ad2b9ec04a50b96297b9ad"
 
 [[files]]
 file = "config/iris.properties"
-hash = "3230a974f9fafb88e661e255734135d2fa066385672b31f55f848e71deb6bc8e"
+hash = "c3218185b5cc86650a2dd2131dd7a58ad19bd87bbea43180d9c3e32a1962d7ee"
 
 [[files]]
 file = "config/jei/jei-client.ini"
@@ -162,7 +162,7 @@ hash = "a2f1b47c1eaa119ab34727f1d43c2506cb3d7f17ba8fb4efb49e20c8e0b58e70"
 
 [[files]]
 file = "config/sodium-options.json"
-hash = "d5dbcfb07d71ea359e6b4b3488821edffd6b203bf1e4014d0a7890ea804ee84d"
+hash = "5ef63cca42006c875a176a12d294d98bf0077cc6c6703e608cae451859da4724"
 
 [[files]]
 file = "config/tectonic.json"
@@ -190,7 +190,7 @@ hash = "06a5c1444f2bf0db359f909974a0aeba8988f1d6874e8b80751262f63739afdc"
 
 [[files]]
 file = "config/voxy-config.json"
-hash = "e2f291695e19df9f7c6ccd80962b5986faefc5de2945c40834935403d33463df"
+hash = "c6fa3232e27c261819b5bc0157a072a6c16c7d0af7dc3160dbe1c158072d8472"
 
 [[files]]
 file = "config/waystones-common.toml"
@@ -377,6 +377,11 @@ metafile = true
 [[files]]
 file = "mods/essential.pw.toml"
 hash = "afd367eeb35ea521196634bf4c5b19ab8c23f311ab285bb61273503b0d73043b"
+metafile = true
+
+[[files]]
+file = "mods/euphoria-patches.pw.toml"
+hash = "9ddc3d38031739496f1da8af010522350d8efc1e589502878794f00bad97f090"
 metafile = true
 
 [[files]]
@@ -585,6 +590,11 @@ hash = "eb6ad47f2b7c7ff26d91547f01cc5262ccb8bdaa2ac36c6c7330872ba683e199"
 metafile = true
 
 [[files]]
+file = "mods/punchy-fpa.pw.toml"
+hash = "d2a242cd11e6ef0aab7d5b171f78fcaca6214c6de34b9e7fc8e60b8d9da746fc"
+metafile = true
+
+[[files]]
 file = "mods/puzzles-lib.pw.toml"
 hash = "1f5a989a0469d5a2c09fc2ca6f546788cc27113b1186a653600f84ffeda5ca0c"
 metafile = true
@@ -602,6 +612,11 @@ metafile = true
 [[files]]
 file = "mods/silk.pw.toml"
 hash = "3b9bf541ed93435186f15e09e28c56314a737d11ddb9497b0808392294eb03c2"
+metafile = true
+
+[[files]]
+file = "mods/simple-3x3-pickaxe.pw.toml"
+hash = "2c36659a42ecf7d27a72fd47c473daae41b3c6ea589be90c79d53806a05b2e10"
 metafile = true
 
 [[files]]
@@ -736,7 +751,7 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "f7eb8a388b614d3fb8fa984a7cb8e66d945378da866e838ae23d411b6e9ce6f2"
+hash = "596c6f6bd2adca57f03770bc149caff27556da2380641df3b9a4af6590cd90e0"
 
 [[files]]
 file = "resourcepacks/1x1-ultimate.pw.toml"
@@ -883,11 +898,6 @@ hash = "66dbf07a5c062dd2a915cd021e3ca5f2149488888b1a455c27b10ddfcee7a48f"
 metafile = true
 
 [[files]]
-file = "shaderpacks/bsl-shaders.pw.toml"
-hash = "ee9179e268d35ffaebd6516fd6d47ee445695d809a6982d4c620fbdc131f90b6"
-metafile = true
-
-[[files]]
 file = "shaderpacks/fantasy-shaders.pw.toml"
 hash = "9b3f6c0f02c48fceca946d37c03714e5b220e55acd0a28468719a27c8de50588"
 metafile = true
@@ -908,16 +918,6 @@ hash = "52f1b06f409569ebf312cb51e199d293284fc801c144c39719baa59e91ec3ff9"
 metafile = true
 
 [[files]]
-file = "shaderpacks/makeup-ultra-fast-shaders.pw.toml"
-hash = "9a29ed49f8bbbe99d546e77b3f90ab71c6d323388f5f26d9fb981a02e09fbb19"
-metafile = true
-
-[[files]]
-file = "shaderpacks/mellow.pw.toml"
-hash = "4e2275e9ad54687c54b355ac6b74260263951af225f94cb32b94fc58b3ba8054"
-metafile = true
-
-[[files]]
 file = "shaderpacks/miniature-shader.pw.toml"
 hash = "5e7c6a6fd304073ed0f9ae59860356fbdeeae63c98bcaca845305b3f35fb67fe"
 metafile = true
@@ -930,11 +930,6 @@ metafile = true
 [[files]]
 file = "shaderpacks/potato-shaders.pw.toml"
 hash = "439334dd4f3860b6755251fd5e47093e2f3df077cd092c8bf59916cfde8bb308"
-metafile = true
-
-[[files]]
-file = "shaderpacks/solas-shader.pw.toml"
-hash = "7bf1d2183c1552f1f8b22ff8d08c7e9ea2b7fae1e8aa013b4b0f24364effbc0c"
 metafile = true
 
 [[files]]

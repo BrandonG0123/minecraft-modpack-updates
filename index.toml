@@ -42,7 +42,7 @@ hash = "0b05a8814f09fead55b1901b7efab7d3ab87227ea3fc6b5e65a6197261832710"
 
 [[files]]
 file = "config/biomeswevegone/world_generation.json"
-hash = "6fb6ff3e2cb4d1c47431b2e9fb48090fd985e0b43777949ec0c346cda85e532d"
+hash = "4e644f8324221022aed71d39b3d56a6cd189d5bd3f67c4aa72b889fb208421da"
 
 [[files]]
 file = "config/chesttracker.json5"
@@ -304,6 +304,11 @@ hash = "afd367eeb35ea521196634bf4c5b19ab8c23f311ab285bb61273503b0d73043b"
 metafile = true
 
 [[files]]
+file = "mods/euphoria-patches.pw.toml"
+hash = "9ddc3d38031739496f1da8af010522350d8efc1e589502878794f00bad97f090"
+metafile = true
+
+[[files]]
 file = "mods/fabric-api.pw.toml"
 hash = "0930794bb05513b7b3f4431dad73a45211acce632c93ee606db020d37f72e720"
 metafile = true
@@ -509,6 +514,11 @@ hash = "eb6ad47f2b7c7ff26d91547f01cc5262ccb8bdaa2ac36c6c7330872ba683e199"
 metafile = true
 
 [[files]]
+file = "mods/punchy-fpa.pw.toml"
+hash = "d2a242cd11e6ef0aab7d5b171f78fcaca6214c6de34b9e7fc8e60b8d9da746fc"
+metafile = true
+
+[[files]]
 file = "mods/puzzles-lib.pw.toml"
 hash = "1f5a989a0469d5a2c09fc2ca6f546788cc27113b1186a653600f84ffeda5ca0c"
 metafile = true
@@ -526,6 +536,11 @@ metafile = true
 [[files]]
 file = "mods/silk.pw.toml"
 hash = "3b9bf541ed93435186f15e09e28c56314a737d11ddb9497b0808392294eb03c2"
+metafile = true
+
+[[files]]
+file = "mods/simple-3x3-pickaxe.pw.toml"
+hash = "2c36659a42ecf7d27a72fd47c473daae41b3c6ea589be90c79d53806a05b2e10"
 metafile = true
 
 [[files]]
@@ -708,11 +723,6 @@ hash = "ddf4441cf14aa0687daf0e26fc098f8c9d83bafd775715dd601c9a2a2b145fef"
 metafile = true
 
 [[files]]
-file = "shaderpacks/makeup-ultra-fast-shaders.pw.toml"
-hash = "9a29ed49f8bbbe99d546e77b3f90ab71c6d323388f5f26d9fb981a02e09fbb19"
-metafile = true
-
-[[files]]
 file = "shaderpacks/miniature-shader.pw.toml"
 hash = "5e7c6a6fd304073ed0f9ae59860356fbdeeae63c98bcaca845305b3f35fb67fe"
 metafile = true
@@ -720,9 +730,4 @@ metafile = true
 [[files]]
 file = "shaderpacks/potato-shaders.pw.toml"
 hash = "439334dd4f3860b6755251fd5e47093e2f3df077cd092c8bf59916cfde8bb308"
-metafile = true
-
-[[files]]
-file = "shaderpacks/solas-shader.pw.toml"
-hash = "7bf1d2183c1552f1f8b22ff8d08c7e9ea2b7fae1e8aa013b4b0f24364effbc0c"
 metafile = true

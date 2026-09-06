@@ -1,0 +1,13 @@
+name = "Punchy!"
+filename = "punchy-2.7e-fabric-1.21.11.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/8aoMKplv/versions/evVXtKxh/punchy-2.7e-fabric-1.21.11.jar"
+hash-format = "sha512"
+hash = "cae6e21ac90e6fd3e888b016b1d4ee470f8ba5e0653a7b6b85c32d2f5ea8e953be362ea601981edbbdebd23a1f01b48d525703b898fb2ad226cf133f9a4fb478"
+
+[update]
+[update.modrinth]
+mod-id = "8aoMKplv"
+version = "evVXtKxh"
