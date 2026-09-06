@@ -63,7 +63,7 @@ damageTiltStrength:1.0
 highContrast:false
 highContrastBlockOutline:false
 narratorHotkey:true
-resourcePacks:["vanilla","continuity:default","continuity:glass_pane_culling_fix","$polymer-resources","chesttracker:darkmode_texture","classic_icons","file/Better-Leaves-9.5.zip","file/LowOnFire v26.2§8.zip","file/No Firework Particles.zip","file/SodiumTranslations.zip","file/Fast Better Grass.zip"]
+resourcePacks:["vanilla","continuity:default","continuity:glass_pane_culling_fix","$polymer-resources","chesttracker:darkmode_texture","classic_icons","file/Better-Leaves-9.5.zip","file/LowOnFire v26.2§8.zip","file/No Firework Particles.zip","file/SodiumTranslations.zip","file/Fast Better Grass.zip","punchy:punchy"]
 incompatibleResourcePacks:["file/No Firework Particles.zip"]
 lastServer:
 lang:en_us
@@ -235,6 +235,8 @@ key_orthocamera.key.fixed_camera_rotate_up:key.keyboard.unknown
 key_orthocamera.key.fixed_camera_rotate_down:key.keyboard.unknown
 key_orthocamera.key.fixed_camera_rotate_left:key.keyboard.unknown
 key_orthocamera.key.fixed_camera_rotate_right:key.keyboard.unknown
+key_key.punchy.open_main_menu:key.keyboard.f8
+key_key.punchy.inspect:key.keyboard.i
 key_key.trade_cycling.cycle_trades:key.keyboard.j
 key_key.trashslot.toggle:key.keyboard.f12
 key_key.trashslot.toggle_lock:key.keyboard.unknown
@@ -313,6 +315,8 @@ key_keybind.name.EMOTE_SLOT_6:key.keyboard.unknown
 key_keybind.name.EMOTE_SLOT_7:key.keyboard.unknown
 key_keybind.name.EMOTE_SLOT_8:key.keyboard.unknown
 key_keybind.name.ZOOM:key.keyboard.unknown
+key_key.punchy.triggerable.punchy_sword_inspect_old:key.keyboard.j
+key_key.punchy.triggerable.punchy_sword_inspect_rework:key.keyboard.g
 soundCategory_master:0.3021523178807947
 soundCategory_music:0.0
 soundCategory_record:0.477112676056338

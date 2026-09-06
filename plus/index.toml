@@ -118,7 +118,7 @@ hash = "644f39cbb26b75c7fc66004250fc50c6dbdcfc27c6ad2b9ec04a50b96297b9ad"
 
 [[files]]
 file = "config/iris.properties"
-hash = "c3218185b5cc86650a2dd2131dd7a58ad19bd87bbea43180d9c3e32a1962d7ee"
+hash = "9f864d119390f8bbd642393a37305a334a43d475887e62d036b1188c28090dd8"
 
 [[files]]
 file = "config/jei/jei-client.ini"
@@ -615,11 +615,6 @@ hash = "3b9bf541ed93435186f15e09e28c56314a737d11ddb9497b0808392294eb03c2"
 metafile = true
 
 [[files]]
-file = "mods/simple-3x3-pickaxe.pw.toml"
-hash = "2c36659a42ecf7d27a72fd47c473daae41b3c6ea589be90c79d53806a05b2e10"
-metafile = true
-
-[[files]]
 file = "mods/simple-voice-chat.pw.toml"
 hash = "381cff2b233c4295cbf400ba6cef4053e0a39a91061a7c45fd6a14bbf61ca528"
 metafile = true
@@ -751,7 +746,7 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "596c6f6bd2adca57f03770bc149caff27556da2380641df3b9a4af6590cd90e0"
+hash = "a7c0294c56af2c9af1fffb580a332f80d7d005d8967f2c61d1a751b91d9ac8c8"
 
 [[files]]
 file = "resourcepacks/1x1-ultimate.pw.toml"

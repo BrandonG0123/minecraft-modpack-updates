@@ -539,11 +539,6 @@ hash = "3b9bf541ed93435186f15e09e28c56314a737d11ddb9497b0808392294eb03c2"
 metafile = true
 
 [[files]]
-file = "mods/simple-3x3-pickaxe.pw.toml"
-hash = "2c36659a42ecf7d27a72fd47c473daae41b3c6ea589be90c79d53806a05b2e10"
-metafile = true
-
-[[files]]
 file = "mods/simple-voice-chat.pw.toml"
 hash = "381cff2b233c4295cbf400ba6cef4053e0a39a91061a7c45fd6a14bbf61ca528"
 metafile = true
