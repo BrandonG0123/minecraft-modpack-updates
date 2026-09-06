@@ -17,5 +17,3 @@ plus/
 # the mods-only pack is a separate packwiz pack with its own index
 modsonly/
 
-# datapack sources + built zip: served over Pages, not pack content
-dist-datapacks/

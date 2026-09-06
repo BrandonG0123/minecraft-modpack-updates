@@ -1,8 +1,0 @@
-name = "Enderite Enchantments Fix"
-filename = "enderite-enchantments.zip"
-side = "server"
-
-[download]
-url = "https://brandong0123.github.io/minecraft-modpack-updates/dist-datapacks/enderite-enchantments.zip"
-hash-format = "sha512"
-hash = "8596685efa7128ade2e605a8baae11b69388e91fa1d309dfb6a87dc5ccc3c28b7188c646c994bcda96e853e535996d68c545a71f119fd23ce685dd527da55d17"
