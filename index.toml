@@ -97,6 +97,10 @@ file = "config/mob-ai-tweaks/general_config.txt"
 hash = "61e5b25b4ade063a919a5a8e96d5b4f6d30765ab128b7348618ae8fbb738fbf4"
 
 [[files]]
+file = "config/punchy/punchy_config.json"
+hash = "61ba5638b7bed25c8094ce099ec09c57a1dc7c746139b9b5cdf772de8a166c71"
+
+[[files]]
 file = "config/rightclickharvest.json5"
 hash = "6eb5169563472ae96184c94e9f42ff7d76fdba403ed3190ffb308e817ea0a21e"
 
